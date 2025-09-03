@@ -1,4 +1,4 @@
-ValueSet: EEObservationCodeVS
+/*ValueSet: EEObservationCodeVS
 Id: ee-observation-code-vs
 Title: "Observation Code ValueSet"
 Description: "Locally defined codes used for clinical observation types in the project."
@@ -6,4 +6,4 @@ Description: "Locally defined codes used for clinical observation types in the p
 * ^experimental = false
 
 * include codes from system EEObservationCodeSystem
-
+*/
