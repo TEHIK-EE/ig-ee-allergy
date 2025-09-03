@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "ig-ee-allergy",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/allergy/ImplementationGuide/ig-ee-allergy",
+    "version" : "0.1.0",
+    "name" : "EETEHIKIGAllergy"
+  },
+  {
+    "id" : "ee-allergy",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/allergy/StructureDefinition/ee-allergy",
+    "version" : "0.1.0",
+    "name" : "EEAllergy"
+  },
+  {
+    "id" : "ee-allergy-probability-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/allergy/StructureDefinition/ee-allergy-probability-extension",
+    "version" : "0.1.0",
+    "name" : "EEAllergyProbability"
+  }
+]
