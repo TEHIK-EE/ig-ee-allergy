@@ -18,4 +18,3 @@ Description: "An example profile for allergy."
 * verificationStatus ^short = "Seisundi kinnitatuse tase."
 * criticality ^short = "Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."
 * criticality ^binding.description = "siia tuleb loend"
-* probability 
