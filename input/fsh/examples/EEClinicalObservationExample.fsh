@@ -1,4 +1,4 @@
-Instance: EEClinicalObservationExample
+/*Instance: EEClinicalObservationExample
 InstanceOf: EEClinicalObservation
 Title: "Clinical Observation Example"
 Description: "Example of a clinical observation."
@@ -14,3 +14,4 @@ Usage: #example
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #Cel
 * extension[bodyPosition].valueCodeableConcept = $sct#33586001 "Sitting position"
+*/
