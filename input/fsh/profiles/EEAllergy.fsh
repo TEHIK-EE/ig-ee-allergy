@@ -1,11 +1,11 @@
-Profile: EEAllergy
+Profile: EETISAllergyIntolerance
 Parent: AllergyIntolerance
-Id: ee-allergy
-Title: "Allergy"
-Description: "An example profile for allergy."
+Id: ee-tis-allergy-intolerance
+Title: "EE TIS AllergyIntolerance"
+Description: "A base profile for allergy and intolerance."
 
 * extension contains
-    EEAllergyProbability named probability 0..1 
+    ExtensionEETISAllergyProbability named probability 0..1 
 
 // patient only Reference(https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified) andis errori 
 * note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."

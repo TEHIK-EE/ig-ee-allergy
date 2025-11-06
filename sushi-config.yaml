@@ -7,8 +7,8 @@
 # specific packageId is also provided in this file.
 id: ig-ee-allergy # REPLACE_ME: use a unique id for your IG
 canonical: https://fhir.ee/allergy # REPLACE_ME: canonical url should start with https://fhir.ee/ and end with domain specific path
-name: EE TEHIK IG Allergy # REPLACE_ME:
-title: "TEHIK FHIR IG Allergy" # REPLACE_ME:
+name: EE TIS IG Allergy # REPLACE_ME:
+title: "EE TIS Allergy IG" # REPLACE_ME:
 description: TEHIK IG starter project to Allergy # REPLACE_ME:
 status: draft # active | draft | active | retired | unknown # REPLACE_ME: according to maturity of the IG
 license: MIT
