@@ -1,8 +1,6 @@
 [//]: # (REPLACE_ME: Should replace with domain specific introduction)
 ### Intro
-This implementation guide is a base template and starter point for creating new IG within TEHIK.
-
-It provides some conventions on how to structure IG, build it and publish generated website.
+This implementation guide is for the allergy and intolerances data exchange in the context of patient summary and cross boarder activities. 
 
 #### Source code
 [//]: # (REPLACE_ME: Use project specific GitHub repository URL)
