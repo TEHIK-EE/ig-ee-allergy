@@ -1,6 +1,6 @@
 Logical: EETISModelAllergyIntolerance
 Id: ee-tis-model-allergyintolerance
-Parent: Element
+Parent: Base
 Title: "Allergy Intolerance Logical Model"
 Description:    "Allergy / Intolerance logical model"
 
