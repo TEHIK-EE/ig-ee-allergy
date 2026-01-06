@@ -1,0 +1,31 @@
+# ig-ee-allergy#0.1.0: EE TIS Allergy IG
+
+## Pages
+
+* [Home](index.md)
+* [Sample page 2](page2.md)
+* [Intolerance](intolerance.md)
+* [Contacts](contacts.md)
+* [Artifacts Summary](artifacts.md)
+* [Search](search.md)
+* [Downloads](downloads.md)
+
+## Resources
+
+### Resource Profiles
+
+* [EE TIS AllergyIntolerance](StructureDefinition-ee-tis-allergy-intolerance.md)
+* [EE TIS AllergyIntolerance Patient Reported](StructureDefinition-ee-tis-allergy-patient-reported.md)
+
+### Extensions
+
+* [Allergy diagnose](StructureDefinition-ee-tis-allergy-diagnosis.md)
+* [Allergy probability](StructureDefinition-ee-tis-allergy-probability.md)
+
+### ImplementationGuides
+
+* [EE TIS Allergy IG](index.md)
+
+### Examples
+
+* [example (AllergyIntolerance)](AllergyIntolerance-example.md)

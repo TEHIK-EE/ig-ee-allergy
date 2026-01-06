@@ -1,0 +1,67 @@
+EETISIGAllergy : Validation Results
+=========================================
+
+err = 2, warn = 23, info = 21
+$--
+Generated $--. FHIR version $-- for ig-ee-allergy#$-- (canonical = https://fhir.ee/allergy)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-example : 2 / 0 / 7
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ig-ee-allergy : 0 / 2 / 16
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-diagnosis : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-patient-reported : 0 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-probability : 0 / 4 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AllergyIntolerance-example.json ==
+INFORMATION: AllergyIntolerance/example: AllergyIntolerance.code: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/substance-code|5.0.0
+INFORMATION: AllergyIntolerance/example: AllergyIntolerance.code: Reference to experimental ValueSet http://hl7.org/fhir/ValueSet/substance-code|5.0.0
+INFORMATION: AllergyIntolerance/example: AllergyIntolerance.code: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/allergyintolerance-code|5.0.0
+INFORMATION: AllergyIntolerance/example: AllergyIntolerance.code: Reference to experimental ValueSet http://hl7.org/fhir/ValueSet/allergyintolerance-code|5.0.0
+INFORMATION: AllergyIntolerance/example: AllergyIntolerance.code.coding[0].display: 'Berberine' is the default display; the code system http://snomed.info/sct has no Display Names for the language et
+ERROR: AllergyIntolerance/example: AllergyIntolerance.patient: Unable to resolve resource with reference 'Patient/$ee-mpi-patient'
+ERROR: AllergyIntolerance/example: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+INFORMATION: AllergyIntolerance/example: AllergyIntolerance.reaction[0].manifestation[0].concept.coding[0].display: 'Typhlolithiasis' is the default display; the code system http://snomed.info/sct has no Display Names for the language et
+== fsh-generated/resources/ImplementationGuide-ig-ee-allergy.json ==
+WARNING: ImplementationGuide/ig-ee-allergy: ImplementationGuide.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: ImplementationGuide/ig-ee-allergy: ImplementationGuide.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-diagnosis.json ==
+WARNING: StructureDefinition/ee-tis-allergy-diagnosis: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-diagnosis: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance.json ==
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[6].binding: The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[15].binding: The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[33].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-patient-reported.json ==
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.differential.element[6].binding: The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[15].binding: The definition for the element 'AllergyIntolerance.code' binds to the value set 'http://hl7.org/fhir/ValueSet/allergyintolerance-code' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[33].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-probability.json ==
+WARNING: StructureDefinition/ee-tis-allergy-probability: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-probability: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-probability: StructureDefinition.context[0]: Review the extension type for ee-tis-allergy-probability: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability'): The Implementation Guide contains no examples for this extension

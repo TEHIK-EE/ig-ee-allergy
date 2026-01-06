@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "ig-ee-allergy",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/allergy/ImplementationGuide/ig-ee-allergy",
+    "version" : "0.1.0",
+    "name" : "EETISIGAllergy"
+  },
+  {
+    "id" : "ee-tis-allergy-intolerance",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance",
+    "version" : "0.1.0",
+    "name" : "EETISAllergyIntolerance"
+  },
+  {
+    "id" : "ee-tis-allergy-probability",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability",
+    "version" : "0.1.0",
+    "name" : "ExtensionEETISAllergyProbability"
+  },
+  {
+    "id" : "ee-tis-model-allergyintolerance",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-model-allergyintolerance",
+    "version" : "0.1.0",
+    "name" : "EETISModelAllergyIntolerance"
+  }
+]

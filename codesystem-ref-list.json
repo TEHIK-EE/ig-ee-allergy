@@ -1,0 +1,60 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-category",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "Allergy Intolerance Category",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.53",
+        "2.16.840.1.113883.4.642.4.134",
+        "2.16.840.1.113883.4.642.1.124"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-category.html" : "Allergy Intolerance Category"
+    },
+    {
+      "url" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "Allergy Intolerance Criticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.120",
+        "2.16.840.1.113883.4.642.4.130",
+        "2.16.840.1.113883.4.642.2.51"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergy-intolerance-criticality.html" : "Allergy Intolerance Criticality"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1373"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergyintolerance-clinical.html" : "AllergyIntolerance Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AllergyIntoleranceVerificationStatus",
+      "title" : "AllergyIntolerance Verification Status",
+      "description" : "The verification status to support or decline the clinical status of the allergy or intolerance.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1371"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-allergyintolerance-verification.html" : "AllergyIntolerance Verification Status"
+    }
+  ]
+}
