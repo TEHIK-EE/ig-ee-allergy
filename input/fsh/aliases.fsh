@@ -14,3 +14,5 @@ Alias: $verification-status = http://hl7.org/fhir/ValueSet/allergyintolerance-ve
 Alias: $clinical-status = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
 Alias: $allergy-category = http://hl7.org/fhir/ValueSet/allergy-intolerance-category
 Alias: $allergy-code = http://hl7.org/fhir/ValueSet/allergyintolerance-code
+Alias: $verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical

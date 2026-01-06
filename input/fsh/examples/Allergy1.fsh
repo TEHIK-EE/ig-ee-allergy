@@ -18,8 +18,8 @@ Description: "A simple example of a FHIR allergy resource."
 * participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #food
 * recordedDate = "2012-12-13" 
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = $clinical#active "Active"
+* verificationStatus = $verification#confirmed "Confirmed"
 * reaction.manifestation.concept.coding.system = "http://snomed.info/sct"
 * reaction.manifestation.concept.coding.code = #168000 
 * reaction.manifestation.concept.coding.display = "Typhlolithiasis"
