@@ -16,6 +16,7 @@ Description: "A base profile for allergy and intolerance."
 * code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
 * category ^short = "Allergeeni üldine kategooria."
 * category 1..1
+* category from http://hl7.org/fhir/ValueSet/allergy-intolerance-category
 * recordedDate 1..1
 * recordedDate ^short = "Date when the allergy was first time recorded. (ee Kuupäev, millal allergia esimest korda registreeriti (määratakse süsteemi poolt automaatselt allergia esimese versiooni salvestamisel, järgmistes versioonides ei muudeta).)"
 * onsetPeriod.end 0..1 

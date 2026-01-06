@@ -15,7 +15,7 @@ Description: "A simple example of a FHIR allergy resource."
 * code.coding[=].code = #566009	
 * code.coding[=].display = "Acrosin"
 * patient = Reference(Patient/$ee-mpi-patient)
-* category = #allergy
+* category = #food
 * recordedDate = "2012-12-13" 
 * clinicalStatus = #active
 * verificationStatus = #confirmed
