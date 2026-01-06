@@ -1,4 +1,4 @@
-Logical: EETISModelAllergyIntolerance
+/*Logical: EETISModelAllergyIntolerance
 Id: ee-tis-model-allergyintolerance
 Parent: Base
 Title: "Allergy Intolerance Logical Model"
@@ -39,3 +39,4 @@ Description:    "Allergy / Intolerance logical model"
   * ^binding.description = """https://..."""
 * allergiaTalumatuseKirjeldus 0..* string "Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."
 * lisainfo 0..* string "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
+*/

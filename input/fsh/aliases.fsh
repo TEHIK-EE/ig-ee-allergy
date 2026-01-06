@@ -9,3 +9,8 @@ Alias: $rhk-10 = https://fhir.ee/CodeSystem/rhk-10
 Alias: $sct = http://snomed.info/sct
 Alias: $ee-mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified
 Alias: $valu = https://fhir.ee/CodeSystem/valu-esinemise-sagedus
+
+Alias: $verification-status = http://hl7.org/fhir/ValueSet/allergyintolerance-verification
+Alias: $clinical-status = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
+Alias: $allergy-category = http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+Alias: $allergy-code = http://hl7.org/fhir/ValueSet/allergyintolerance-code

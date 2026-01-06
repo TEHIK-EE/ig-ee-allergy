@@ -8,13 +8,14 @@ Description: "A simple example of a FHIR allergy resource."
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[=].code = #200001
 * code.coding[=].display = "Berberine"
-* code.coding[+].system = "http://snomed.info/sct"
+* code.coding[1].system = "http://snomed.info/sct"
 * code.coding[=].code = #377002	
 * code.coding[=].display = "Sparteine"
-* code.coding[+].system = "http://snomed.info/sct"
+* code.coding[2].system = "http://snomed.info/sct"
 * code.coding[=].code = #566009	
 * code.coding[=].display = "Acrosin"
 * patient = Reference(Patient/$ee-mpi-patient)
+* participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #food
 * recordedDate = "2012-12-13" 
 * clinicalStatus = #active

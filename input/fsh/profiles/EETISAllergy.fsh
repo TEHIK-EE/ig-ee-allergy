@@ -12,20 +12,21 @@ Description: "A base profile for allergy and intolerance."
 * note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
 * code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
 * code 1..1
-* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code  
+* code from $allergy-code  
 * code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
 * category ^short = "Allergeeni üldine kategooria."
 * category 1..1
-* category from http://hl7.org/fhir/ValueSet/allergy-intolerance-category
+* category from $allergy-category
 * recordedDate 1..1
 * recordedDate ^short = "Date when the allergy was first time recorded. (ee Kuupäev, millal allergia esimest korda registreeriti (määratakse süsteemi poolt automaatselt allergia esimese versiooni salvestamisel, järgmistes versioonides ei muudeta).)"
 * onsetPeriod.end 0..1 
 * onsetPeriod.end ^short = "Date when allergy was considered resolved/not-active. (ee Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."
 * clinicalStatus ^short = "Allergia või talumatuse praegune kliiniline seisund (nt aktiivne, remissioonis, lahendatud)."
 * clinicalStatus 1..1
+* clinicalStatus from $clinical-status 
 * verificationStatus ^short = "Seisundi kinnitatuse tase."
 * verificationStatus 1..1
-* verificationStatus from http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
+* verificationStatus from $verification-status 
 * criticality ^short = "Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."
 * criticality ^binding.description = "siia tuleb loend"
 * type ^short = "Allergy, intolerance or non-allerganic reaction. (ee Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega).)"
