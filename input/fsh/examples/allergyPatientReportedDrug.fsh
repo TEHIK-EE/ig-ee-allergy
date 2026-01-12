@@ -1,7 +1,7 @@
 Instance: AllergyPatientReportedDrug
 InstanceOf: AllergyIntolerance
-Title: "Example Allergy"
-Description: "A simple example of a FHIR allergy resource."
+Title: "Patient reported drug Allergy"
+Description: "A food allergy reported by patient."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported"
 * language = #et
 //* id = "example"
@@ -11,12 +11,12 @@ Description: "A simple example of a FHIR allergy resource."
 * code.coding[=].code = #293586001
 * code.coding[=].display = "Aspirin allergy"
 * patient = Reference(Patient/$ee-mpi-patient)
-* participant.actor = Reference(PractitionerRole/$ee-pract-role)
+* participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #medication
 * recordedDate = "2012-12-13" 
 * clinicalStatus = $clinical#active "Active"
 //* verificationStatus = $verification#presumed "Presumed"
-* reaction.substance.coding = $toimeained#9773 "atsetüülsalitsüülhape"
+//* reaction.substance.coding = $toimeained#9773 "atsetüülsalitsüülhape"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #3639002	
 * reaction.manifestation.concept.coding.display = "Glossoptosis"

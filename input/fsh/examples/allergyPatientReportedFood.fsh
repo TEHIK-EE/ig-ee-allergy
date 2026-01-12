@@ -1,7 +1,7 @@
 Instance: AllergyPatientReportedFood
 InstanceOf: AllergyIntolerance
-Title: "Example Allergy"
-Description: "A simple example of a FHIR allergy resource."
+Title: "Example Allergy of patient reported food"
+Description: "A food allergy reported by patient."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported"
 * language = #et
 //* id = "example"
@@ -19,3 +19,7 @@ Description: "A simple example of a FHIR allergy resource."
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #168000 
 * reaction.manifestation.concept.coding.display = "Typhlolithiasis"
+* reaction.onset.value = "2023-12-23"
+* reaction.exposureRoute.coding = $sct#47625008	"Oral route"
+* reaction.description = "ja nii on"
+* note.text = "sõin maasikaidja hakkasin sügelema"
