@@ -19,3 +19,7 @@ Alias: $clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clin
 Alias: $allergy-type = http://hl7.org/fhir/ValueSet/allergy-intolerance-type 
 Alias: $toimeained-VS = https://fhir.ee/ValueSet/toimeained
 Alias: $toimeained = https://fhir.ee/CodeSystem/toimeained
+Alias: $severity-VS = http://hl7.org/fhir/ValueSet/reaction-event-severity
+Alias: $severity = http://hl7.org/fhir/reaction-event-severity
+Alias: $criticality-VS = http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality
+Alias: $criticality = http://hl7.org/fhir/allergy-intolerance-criticality
