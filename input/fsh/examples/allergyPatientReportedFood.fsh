@@ -1,23 +1,21 @@
-Instance: Allergy1
+Instance: AllergyPatientReportedFood
 InstanceOf: AllergyIntolerance
 Title: "Example Allergy"
 Description: "A simple example of a FHIR allergy resource."
-* meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"
+* meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported"
 * language = #et
-* id = "example"
+//* id = "example"
 //* extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability" //0 tähistab esimest extensioni
 //* extension[=].valueCodeableConcept = $valu#02 "Esines 1-2 päeva vältel viimase 3 päeva jooksul" // = tähendab, et sama loend
 * code.coding[0].system = $sct
-* code.coding[=].code = #200001
-* code.coding[=].display = "Berberine"
+* code.coding[=].code = #91938006
+* code.coding[=].display = "Allergy to strawberries"
 * patient = Reference(Patient/$ee-mpi-patient)
-* participant.actor = Reference(PractitionerRole/$ee-pract-role)
+* participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #food
-* type.coding = #allergy$allergy-type "Allergy"
 * recordedDate = "2012-12-13" 
 * clinicalStatus = $clinical#active "Active"
-* verificationStatus = $verification#confirmed "Confirmed"
+//* verificationStatus = $verification#presumed "Presumed"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #168000 
 * reaction.manifestation.concept.coding.display = "Typhlolithiasis"
-

@@ -9,7 +9,6 @@ Alias: $rhk-10 = https://fhir.ee/CodeSystem/rhk-10
 Alias: $sct = http://snomed.info/sct
 Alias: $ee-mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified
 Alias: $ee-pract-role = https://fhir.ee/base/StructureDefinition/ee-practitioner-role
-Alias: $valu = https://fhir.ee/CodeSystem/valu-esinemise-sagedus
 
 Alias: $verification-status = http://hl7.org/fhir/ValueSet/allergyintolerance-verification
 Alias: $clinical-status = http://hl7.org/fhir/ValueSet/allergyintolerance-clinical
@@ -17,3 +16,6 @@ Alias: $allergy-category = http://hl7.org/fhir/ValueSet/allergy-intolerance-cate
 Alias: $allergy-code = http://hl7.org/fhir/ValueSet/allergyintolerance-code
 Alias: $verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 Alias: $clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergy-type = http://hl7.org/fhir/ValueSet/allergy-intolerance-type 
+Alias: $toimeained-VS = https://fhir.ee/ValueSet/toimeained
+Alias: $toimeained = https://fhir.ee/CodeSystem/toimeained

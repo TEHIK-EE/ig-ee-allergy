@@ -5,4 +5,3 @@ Description: "Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaals
 * ^context.type = #element
 * ^context.expression = "AllergyIntolerance.reaction"
 * value[x] only Reference(Condition)
-//* valueReference(Condition) // from https://fhir.ee/ValueSet/valu-esinemise-sagedus see siin suvaline loend testimiseks

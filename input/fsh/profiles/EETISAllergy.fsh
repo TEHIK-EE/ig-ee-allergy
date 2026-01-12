@@ -3,20 +3,24 @@ Parent: AllergyIntolerance
 Id: ee-tis-allergy-intolerance
 Title: "EE TIS AllergyIntolerance"
 Description: "A base profile for allergy and intolerance."
-
-//* extension contains
-//    ExtensionEETISAllergyProbability named probability 0..1 
+* contained 0..0
+* extension 0..0
 * patient only Reference($ee-mpi-patient) //  // andis errori 
 * encounter ^short = "Reference to a contact during which the allergy was discovered. (ee Viide kontaktile, mille käigus allergia tuvastati.)"
 * participant 1..1 
 * participant.actor only Reference(PractitionerRole)
 * participant.function = #author
-* note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
+* participant.extension 0..0
+* participant.id 0..0
+* participant.modifierExtension 0..0
+* note ^short = "(ee Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada.)"
 * note 0..1
-* code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
+* code ^short = "(ee Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik.)"
 * code 1..1
+* code.id 0..0
+* code.extension 0..0
 * code from $allergy-code  
-* code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
+* code.text ^short = "(ee Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.)"
 * category ^short = "Allergeeni üldine kategooria."
 * category 1..1
 * category from $allergy-category
@@ -24,16 +28,23 @@ Description: "A base profile for allergy and intolerance."
 * recordedDate ^short = "Date when the allergy was first time recorded. (ee Kuupäev, millal allergia esimest korda registreeriti (määratakse süsteemi poolt automaatselt allergia esimese versiooni salvestamisel, järgmistes versioonides ei muudeta).)"
 * onsetPeriod.end 0..1 
 * onsetPeriod.end ^short = "Date when allergy was considered resolved/not-active. (ee Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."
+* onsetAge 0..0
+* onsetRange 0..0
+* onsetString 0..0
 * clinicalStatus ^short = "Allergia või talumatuse praegune kliiniline seisund (nt aktiivne, remissioonis, lahendatud)."
 * clinicalStatus 1..1
 * clinicalStatus from $clinical-status 
 * verificationStatus ^short = "Seisundi kinnitatuse tase."
 * verificationStatus 1..1
 * verificationStatus from $verification-status 
-* criticality ^short = "Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."
+* criticality ^short = "(ee Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid.)"
 * criticality ^binding.description = "siia tuleb loend"
 * type ^short = "Allergy, intolerance or non-allerganic reaction. (ee Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega).)"
+* type from $allergy-type
 * reaction 1..*
+* reaction.id 0..0
+* reaction.modifierExtension 0..0
+* reaction.note 0..0
 * reaction.extension 0..*
 * reaction.extension contains
     ExtensionEETISAllergyDiagnosis named diagnose 0..1

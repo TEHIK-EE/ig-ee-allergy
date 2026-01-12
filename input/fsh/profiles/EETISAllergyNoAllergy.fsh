@@ -3,26 +3,37 @@ Parent: AllergyIntolerance
 Id: ee-tis-allergy-intolerance-no-allergy
 Title: "EE TIS AllergyIntoleranceNoAllergy"
 Description: "A profile when there is NO KNOWN allergy and intolerance."
+* contained 0..0
+* extension 0..0
 * patient only Reference($ee-mpi-patient) //  // andis errori 
 * encounter 0..0
 //* encounter ^short = "Reference to a contact during which the allergy was discovered. (ee Viide kontaktile, mille käigus allergia tuvastati.)"
 * participant 0..1 
 * participant.actor only Reference(Patient or RelatedPerson or PractitionerRole)
 * participant.function = #author
+* participant.extension 0..0
+* participant.id 0..0
+* participant.modifierExtension 0..0
 * note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
 * note 0..1
 * code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
 * code 1..1
 * code = #716186003$sct "No Known Allergy"
 * code from $allergy-code  
+* code.id 0..0
+* code.extension 0..0
 //* code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
 //* category ^short = "Allergeeni üldine kategooria."
 * category 0..0
+* type 0..0
 //* category from $allergy-category
 * recordedDate 1..1
 * recordedDate ^short = "Date when the allergy was first time recorded. (ee Kuupäev, millal allergia esimest korda registreeriti (määratakse süsteemi poolt automaatselt allergia esimese versiooni salvestamisel, järgmistes versioonides ei muudeta).)"
 * onsetPeriod.end 0..1 
 * onsetPeriod.end ^short = "Date when allergy was considered resolved/not-active. (ee Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."
+* onsetAge 0..0
+* onsetRange 0..0
+* onsetString 0..0
 * clinicalStatus ^short = "Use only active or inactive"
 * clinicalStatus 1..1
 * clinicalStatus from $clinical-status 
