@@ -7,7 +7,9 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * encounter 0..0 //^short = "Reference to a contact during which the allergy was discovered. (ee Viide kontaktile, mille käigus allergia tuvastati.)"
 * participant 1..1 
 * participant.actor only Reference(Patient or RelatedPerson)
+* participant.function = #author
 * note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
+* note 0..1
 * code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
 * code 1..1
 * code from $allergy-code  
