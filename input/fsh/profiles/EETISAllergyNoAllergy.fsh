@@ -3,10 +3,8 @@ Parent: AllergyIntolerance
 Id: ee-tis-allergy-intolerance-no-allergy
 Title: "EE TIS AllergyIntoleranceNoAllergy"
 Description: "A profile when there is NO KNOWN allergy and intolerance."
-
-//* extension contains
-//    ExtensionEETISAllergyProbability named probability 0..1 
 * patient only Reference($ee-mpi-patient) //  // andis errori 
+* encounter 0..0
 //* encounter ^short = "Reference to a contact during which the allergy was discovered. (ee Viide kontaktile, mille käigus allergia tuvastati.)"
 * participant 0..1 
 * participant.actor only Reference(Patient or RelatedPerson or PractitionerRole)
