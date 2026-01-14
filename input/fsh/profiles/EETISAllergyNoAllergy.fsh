@@ -18,7 +18,7 @@ Description: "A profile when there is NO KNOWN allergy and intolerance."
 * note 0..1
 * code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
 * code 1..1
-* code = #716186003$sct "No Known Allergy"
+* code = #716186003
 * code from $allergy-code-VS  
 * code.id 0..0
 * code.extension 0..0
