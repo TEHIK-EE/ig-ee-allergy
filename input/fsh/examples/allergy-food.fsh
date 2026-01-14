@@ -10,7 +10,7 @@ Description: "An example of a food allergy."
 * patient = Reference(Patient/$ee-mpi-patient)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #food
-* type.coding.code = #allergy "Allergy"
+* type.coding.code = #allergy
 * type.coding.system = $allergy-type
 * type.coding.display = "Allergy"
 * recordedDate = "2012-12-13" 

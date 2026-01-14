@@ -21,6 +21,6 @@ Description: "A food allergy reported by patient."
 * reaction.manifestation.concept.coding.code = #3639002	
 * reaction.manifestation.concept.coding.display = "Glossoptosis"
 * reaction.onset = "2023-12-23"
-* reaction.exposureRoute.coding = $sct#47625008	"Oral route"
+* reaction.exposureRoute.coding = $sct#26643006	"Oral route"
 * reaction.description = "ja nii on"
 * note.text = "võtsin peavalurohtu ja läksin täiesti kärna"

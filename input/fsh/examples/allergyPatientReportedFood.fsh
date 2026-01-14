@@ -20,6 +20,6 @@ Description: "A food allergy reported by patient."
 * reaction.manifestation.concept.coding.code = #168000 
 * reaction.manifestation.concept.coding.display = "Typhlolithiasis"
 * reaction.onset = "2023-12-23"
-* reaction.exposureRoute.coding = $sct#47625008	"Oral route"
+* reaction.exposureRoute.coding = $sct#47625008	"Intravenous route"
 * reaction.description = "ja nii on"
 * note.text = "sõin maasikaidja hakkasin sügelema"
