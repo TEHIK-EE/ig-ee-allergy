@@ -1,7 +1,7 @@
 Instance: AllergyBiologic
 InstanceOf: AllergyIntolerance
 Title: "Example of a biological allergy"
-Description: "An example of a food allergy."
+Description: "An example of a biologic allergy."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"
 * language = #et
 * code.coding[0].system = $sct
