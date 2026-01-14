@@ -14,7 +14,7 @@ Description: "A food allergy reported by patient."
 * participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #food
 * recordedDate = "2012-12-13" 
-* clinicalStatus = $clinical#active "Active"
+* clinicalStatus = $clinical-status#active "Active"
 //* verificationStatus = $verification#presumed "Presumed"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #168000 

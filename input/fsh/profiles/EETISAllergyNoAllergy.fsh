@@ -19,7 +19,7 @@ Description: "A profile when there is NO KNOWN allergy and intolerance."
 * code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
 * code 1..1
 * code = #716186003$sct "No Known Allergy"
-* code from $allergy-code  
+* code from $allergy-code-VS  
 * code.id 0..0
 * code.extension 0..0
 //* code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
@@ -36,10 +36,10 @@ Description: "A profile when there is NO KNOWN allergy and intolerance."
 * onsetString 0..0
 * clinicalStatus ^short = "Use only active or inactive"
 * clinicalStatus 1..1
-* clinicalStatus from $clinical-status 
+* clinicalStatus from $clinical-status-VS 
 * verificationStatus ^short = "Use only presumed or entered-in-error"
 * verificationStatus 1..1
-* verificationStatus from $verification-status 
+* verificationStatus from $verification-status-VS 
 //* criticality ^short = "Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."
 //* criticality ^binding.description = "siia tuleb loend"
 //* type ^short = "Allergy, intolerance or non-allerganic reaction. (ee Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega).)"

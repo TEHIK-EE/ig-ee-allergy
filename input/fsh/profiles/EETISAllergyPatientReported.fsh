@@ -17,14 +17,14 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * note 0..1
 * code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
 * code 1..1
-* code from $allergy-code  
+* code from $allergy-code-VS  
 * code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
 * code.id 0..0
 * code.extension 0..0
 * type 0..0
 * category ^short = "Allergeeni üldine kategooria."
 * category 1..1
-* category from $allergy-category
+* category from $allergy-category-VS
 * recordedDate 1..1
 * recordedDate ^short = "Date when the allergy was first time recorded. (ee Kuupäev, millal allergia esimest korda registreeriti (määratakse süsteemi poolt automaatselt allergia esimese versiooni salvestamisel, järgmistes versioonides ei muudeta).)"
 * onsetPeriod.end 0..1 
@@ -34,7 +34,7 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * onsetString 0..0
 * clinicalStatus ^short = "Allergia või talumatuse praegune kliiniline seisund (nt aktiivne, remissioonis, lahendatud)."
 * clinicalStatus 1..1
-* clinicalStatus from $clinical-status 
+* clinicalStatus from $clinical-status-VS 
 //* verificationStatus ^short = "Seisundi kinnitatuse tase."
 * verificationStatus 0..0
 //* verificationStatus from $verification-status 
@@ -52,8 +52,10 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * reaction.modifierExtension 0..0
 * reaction.note 0..0
 * reaction.manifestation ^short = "Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile"
+* reaction.manifestation from $manifest-VS
 * reaction.severity 0..0 //^short = "Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske). LOEND!"
 * reaction.onset ^short = "Kuupäev, millal reaktsioon esmakordselt täheldati."
 * reaction.exposureRoute ^short = "Kuidas toimus kokkupuude ainega."
+* reaction.exposureRoute from $exposure-route-VS
 * reaction.description ^short = "Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."
 * lastOccurrence 0..0

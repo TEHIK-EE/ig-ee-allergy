@@ -14,6 +14,6 @@ Description: "A simple example of a FHIR allergy resource."
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 //* category = #food
 * recordedDate = "2025-12-13" 
-* clinicalStatus = $clinical#active "Active"
-* verificationStatus = $verification#presumed "Presumed"
+* clinicalStatus = $clinical-status#active "Active"
+* verificationStatus = $verification-status#presumed "Presumed"
 

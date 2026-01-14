@@ -17,8 +17,8 @@ Description: "A simple example of a FHIR allergy resource."
 * type.coding.system = $allergy-type
 * type.coding.display = "Allergy"
 * recordedDate = "2012-12-13" 
-* clinicalStatus = $clinical#active "Active"
-* verificationStatus = $verification#confirmed "Confirmed"
+* clinicalStatus = $clinical-status#active "Active"
+* verificationStatus = $verification-status#confirmed "Confirmed"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #168000 
 * reaction.manifestation.concept.coding.display = "Typhlolithiasis"
