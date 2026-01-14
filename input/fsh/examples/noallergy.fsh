@@ -8,7 +8,7 @@ Description: "A simple example of a FHIR allergy resource."
 //* extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability" //0 tähistab esimest extensioni
 //* extension[=].valueCodeableConcept = $valu#02 "Esines 1-2 päeva vältel viimase 3 päeva jooksul" // = tähendab, et sama loend
 //* code.coding[0].system = $sct
-//* code.coding[=].code = #716186003 
+* code.coding.code = #716186003 
 //* code.coding[=].display = "No Known Allergy"
 * patient = Reference(Patient/$ee-mpi-patient)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
