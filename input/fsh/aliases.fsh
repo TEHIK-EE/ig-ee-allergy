@@ -9,6 +9,7 @@ Alias: $rhk-10 = https://fhir.ee/CodeSystem/rhk-10
 Alias: $sct = http://snomed.info/sct
 Alias: $ee-mpi-patient = https://fhir.ee/mpi/StructureDefinition/ee-mpi-patient-verified
 Alias: $ee-pract-role = https://fhir.ee/base/StructureDefinition/ee-practitioner-role
+Alias: $allergy-condition = https://fhir.ee/StructureDefinition/ee-tis-allergy-condition
 
 Alias: $verification-status-VS = https://fhir.ee/ValueSet/allergia-kinnitusstaatus //http://hl7.org/fhir/ValueSet/allergyintolerance-verification
 Alias: $verification-status = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification

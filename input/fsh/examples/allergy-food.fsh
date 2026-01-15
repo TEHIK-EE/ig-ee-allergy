@@ -20,7 +20,7 @@ Description: "An example of a food allergy."
 * onsetDateTime = "2024-12-12"
 * criticality = $criticality#low "Low Risk"
 * reaction.extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"
-* reaction.extension[=].valueReference.reference = "https://fhir.ee/StructureDefinition/blabla-condition"
+* reaction.extension[=].valueReference.reference = "https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #271807003
 * reaction.manifestation.concept.coding.display = "Nahalööve"
