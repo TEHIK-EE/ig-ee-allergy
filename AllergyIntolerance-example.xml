@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="example"/>
+  <meta>
+    <profile value="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"/>
+  </meta>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance example</b></p><a name="example"> </a><a name="hcexample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-tis-allergy-intolerance.html">EE TIS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/allergy-intolerance-type allergy}">Allergy</span></p><p><b>category</b>: Food</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 200001}">Berberine</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p><p><b>recordedDate</b>: 2012-12-13</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><code>PractitionerRole/$ee-pract-role</code></td></tr></table><blockquote><p><b>reaction</b></p><h3>Manifestations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 168000}">Typhlolithiasis</span></td></tr></table></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/allergy-intolerance-type"/>
+      <code value="allergy"/>
+      <display value="Allergy"/>
+    </coding>
+  </type>
+  <category value="food"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="200001"/>
+      <display value="Berberine"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/$ee-mpi-patient"/>
+  </patient>
+  <recordedDate value="2012-12-13"/>
+  <participant>
+    <actor>
+      <reference value="PractitionerRole/$ee-pract-role"/>
+    </actor>
+  </participant>
+  <reaction>
+    <manifestation>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="168000"/>
+          <display value="Typhlolithiasis"/>
+        </coding>
+      </concept>
+    </manifestation>
+  </reaction>
+</AllergyIntolerance>
