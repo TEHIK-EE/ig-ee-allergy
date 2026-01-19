@@ -1,8 +1,8 @@
 Instance: AllergyCondition1
 InstanceOf: Condition
 Usage: #example
-Title: "Example of a condition indication allergy"
-Description: "Example of a condition indication allergy"
+Title: "Example of a diagnose reference related to indication allergy"
+Description: "Example of a diagnose related to allergy"
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-condition"
 * language = #et
 * clinicalStatus = #active
