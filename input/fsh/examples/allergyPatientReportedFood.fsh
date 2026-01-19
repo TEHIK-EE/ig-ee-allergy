@@ -1,6 +1,6 @@
 Instance: AllergyPatientReportedFood
 InstanceOf: AllergyIntolerance
-Title: "Example Allergy of patient reported food"
+Title: "Example of patient reported food allergy."
 Description: "A food allergy reported by patient."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported"
 * language = #et

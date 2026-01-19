@@ -1,7 +1,7 @@
 Instance: noAllergy
 InstanceOf: AllergyIntolerance
 Title: "Example of no known Allergy"
-Description: "A simple example of a FHIR allergy resource."
+Description: "An example of a no known allergy."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-no-allergy"
 * language = #et
 //* id = "example"

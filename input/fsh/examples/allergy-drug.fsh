@@ -16,11 +16,11 @@ Description: "An example of a medication allergy."
 * recordedDate = "2012-12-13" 
 * clinicalStatus = $clinical-status#active "Active"
 * verificationStatus = $verification-status#confirmed "Confirmed"
-* note.text = "all blaablaa ergia"
+* note.text = "Hirmsasti sügeleb."
 * onsetDateTime = "2024-12-12"
 * criticality = $criticality#high "High Risk"
 * reaction.extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"
-* reaction.extension[=].valueReference.reference = "https://fhir.ee/StructureDefinition/blabla-condition"
+* reaction.extension[=].valueReference = Reference(AllergyCondition1) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
 * reaction.substance = $sct#3145006 "Penicillic acid"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #40275004

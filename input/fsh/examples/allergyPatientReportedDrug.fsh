@@ -1,7 +1,7 @@
 Instance: AllergyPatientReportedDrug
 InstanceOf: AllergyIntolerance
-Title: "Patient reported drug Allergy"
-Description: "A food allergy reported by patient."
+Title: "Patient reported medication allergy"
+Description: "A medication allergy reported by patient."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported"
 * language = #et
 //* id = "example"

@@ -1,4 +1,4 @@
-Instance: Allergy1
+/*Instance: Allergy1
 InstanceOf: AllergyIntolerance
 Title: "Example Allergy"
 Description: "A simple example of a FHIR allergy resource."
@@ -22,4 +22,4 @@ Description: "A simple example of a FHIR allergy resource."
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #168000 
 * reaction.manifestation.concept.coding.display = "Typhlolithiasis"
-
+*/

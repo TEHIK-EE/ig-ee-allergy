@@ -1,5 +1,6 @@
-Instance: AllergyCondition
+Instance: AllergyCondition1
 InstanceOf: Condition
+Usage: #example
 Title: "Example of a condition indication allergy"
 Description: "Example of a condition indication allergy"
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-condition"

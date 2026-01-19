@@ -1,7 +1,7 @@
 Extension: ExtensionEETISAllergyDiagnosis
 Id: ee-tis-allergy-diagnosis
-Title: "Allergy diagnose"
-Description: "Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele. Loend on pandud testimiseks, ära seda kasuta."
+Title: "Diagnose of allergy/intolerance"
+Description: "Reference to a diagnose related to allergy/intolerance. (ee Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele.)"
 * ^context.type = #element
 * ^context.expression = "AllergyIntolerance.reaction"
 * value[x] only Reference(Condition)

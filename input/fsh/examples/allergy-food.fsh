@@ -16,11 +16,11 @@ Description: "An example of a food allergy."
 * recordedDate = "2012-12-13" 
 * clinicalStatus = $clinical-status#active "Active"
 * verificationStatus = $verification-status#confirmed "Confirmed"
-* note.text = "all blaablaa ergia"
+* note.text = "Käinud juba 5 erineva allergoloogi juures."
 * onsetDateTime = "2024-12-12"
 * criticality = $criticality#low "Low Risk"
 * reaction.extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"
-* reaction.extension[=].valueReference = Reference(AllergyCondition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
+* reaction.extension[=].valueReference = Reference(AllergyCondition1) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #271807003
 * reaction.manifestation.concept.coding.display = "Nahalööve"

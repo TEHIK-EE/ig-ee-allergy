@@ -2,7 +2,7 @@ Profile: EETISAllergyIntoleranceNoAllergy
 Parent: AllergyIntolerance
 Id: ee-tis-allergy-intolerance-no-allergy
 Title: "EE TIS AllergyIntoleranceNoAllergy"
-Description: "A profile when there is NO KNOWN allergy and intolerance."
+Description: "A profile when there is NO KNOWN allergy/intolerance."
 * contained 0..0
 * extension 0..0
 * patient only Reference($ee-mpi-patient) //  // andis errori 
@@ -14,9 +14,9 @@ Description: "A profile when there is NO KNOWN allergy and intolerance."
 * participant.extension 0..0
 * participant.id 0..0
 * participant.modifierExtension 0..0
-* note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
+* note ^short = "Other relevant information. (ee Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada.)"
 * note 0..1
-* code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
+* code ^short = "Only 'No known allergy' is allowed. (ee Lubatud on ainult üks kood, mis väljendab allergia puudumist.)"
 * code 1..1
 * code = #716186003
 * code from $allergy-code-VS  
@@ -34,10 +34,10 @@ Description: "A profile when there is NO KNOWN allergy and intolerance."
 * onsetAge 0..0
 * onsetRange 0..0
 * onsetString 0..0
-* clinicalStatus ^short = "Use only active or inactive"
+* clinicalStatus ^short = "Use only |active| or |inactive|"
 * clinicalStatus 1..1
 * clinicalStatus from $clinical-status-VS 
-* verificationStatus ^short = "Use only presumed or entered-in-error"
+* verificationStatus ^short = "Use only |presumed| or |entered-in-error|"
 * verificationStatus 1..1
 * verificationStatus from $verification-status-VS 
 //* criticality ^short = "Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."

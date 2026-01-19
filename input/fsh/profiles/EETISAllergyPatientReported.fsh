@@ -2,7 +2,7 @@ Profile: EETISAllergyPatientReported
 Parent: AllergyIntolerance
 Id: ee-tis-allergy-patient-reported
 Title: "EE TIS AllergyIntolerance Patient Reported"
-Description: "A profile for allergy and intolerance which is reported by patient or RelatedPerson."
+Description: "A profile for allergy or intolerance which is reported by patient or RelatedPerson."
 * contained 0..0
 * extension 0..0
 * patient only Reference($ee-mpi-patient) //  // andis errori 
@@ -13,16 +13,16 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * participant.extension 0..0
 * participant.id 0..0
 * participant.modifierExtension 0..0
-* note ^short = "Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."
+* note ^short = "Other relevant information. (ee Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada.)"
 * note 0..1
-* code ^short = "Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."
+* code ^short = "Allergy code. (ee Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik.)"
 * code 1..1
 * code from $allergy-code-VS  
-* code.text ^short = "Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."
+* code.text ^short = "Description of allergy when there is no suitable code. ( ee Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.)"
 * code.id 0..0
 * code.extension 0..0
 * type 0..0
-* category ^short = "Allergeeni üldine kategooria."
+* category ^short = "Category of allergy. (ee Allergeeni üldine kategooria.)"
 * category 1..1
 * category from $allergy-category-VS
 * recordedDate 1..1
@@ -32,7 +32,7 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * onsetAge 0..0
 * onsetRange 0..0
 * onsetString 0..0
-* clinicalStatus ^short = "Allergia või talumatuse praegune kliiniline seisund (nt aktiivne, remissioonis, lahendatud)."
+* clinicalStatus ^short = "(Clinical status. (ee Allergia või talumatuse praegune kliiniline seisund (nt aktiivne, remissioonis, lahendatud)."
 * clinicalStatus 1..1
 * clinicalStatus from $clinical-status-VS 
 //* verificationStatus ^short = "Seisundi kinnitatuse tase."
@@ -51,11 +51,11 @@ Description: "A profile for allergy and intolerance which is reported by patient
 * reaction.id 0..0
 * reaction.modifierExtension 0..0
 * reaction.note 0..0
-* reaction.manifestation ^short = "Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile"
+* reaction.manifestation ^short = "How allergy is manifested.(ee Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile.)"
 * reaction.manifestation from $manifest-VS
 * reaction.severity 0..0 //^short = "Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske). LOEND!"
-* reaction.onset ^short = "Kuupäev, millal reaktsioon esmakordselt täheldati."
-* reaction.exposureRoute ^short = "Kuidas toimus kokkupuude ainega."
+* reaction.onset ^short = "Date of reaction. (ee Kuupäev, millal reaktsioon esmakordselt täheldati.)"
+* reaction.exposureRoute ^short = "What was the route of exposure to the allergen. (ee Kuidas toimus kokkupuude ainega.)"
 * reaction.exposureRoute from $exposure-route-VS
-* reaction.description ^short = "Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."
+* reaction.description ^short = "Additional explanation of the allergy. (ee Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."
 * lastOccurrence 0..0
