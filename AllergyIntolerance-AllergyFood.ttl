@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/allergy/AllergyIntolerance/AllergyFood> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AllergyFood"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "et"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance AllergyFood</b></p><a name=\"AllergyFood\"> </a><a name=\"hcAllergyFood\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-allergy-intolerance.html\">EE TIS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/allergy-intolerance-type allergy}\">Allergy</span></p><p><b>category</b>: Food</p><p><b>criticality</b>: Low Risk</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 860604008}\">Allergy to apple</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p><p><b>onset</b>: 2024-12-12</p><p><b>recordedDate</b>: 2012-12-13</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><code>PractitionerRole/$ee-pract-role</code></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Käinud juba 5 erineva allergoloogi juures.</p>\n</div></blockquote><blockquote><p><b>reaction</b></p><p><b>Diagnose of allergy/intolerance</b>: <a href=\"Condition-AllergyCondition1.html\">Condition Õietolmu põhjustatud allergiline riniit</a></p><h3>Manifestations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 271807003}\">Nahalööve</span></td></tr></table><p><b>description</b>: koleluguonhirmus</p><p><b>onset</b>: 2024-11-11</p><p><b>severity</b>: Mild</p><p><b>exposureRoute</b>: <span title=\"Codes:{http://snomed.info/sct 448598008}\">Cutaneous route</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-verification>
+       ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/allergy-intolerance-type"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/allergy-intolerance-type>
+       ] ;
+       fhir:code [ fhir:v "allergy" ] ;
+       fhir:display [ fhir:v "Allergy" ]
+     ] )
+  ] ; # 
+  fhir:category ( [ fhir:v "food"] ) ; # 
+  fhir:criticality [ fhir:v "low"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:860604008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "860604008" ] ;
+       fhir:display [ fhir:v "Allergy to apple" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:l <https://fhir.ee/allergy/Patient/$ee-mpi-patient> ;
+     fhir:reference [ fhir:v "Patient/$ee-mpi-patient" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:DateTime ;
+     fhir:v "2024-12-12"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2012-12-13"^^xsd:date] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:l <https://fhir.ee/allergy/PractitionerRole/$ee-pract-role> ;
+       fhir:reference [ fhir:v "PractitionerRole/$ee-pract-role" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Käinud juba 5 erineva allergoloogi juures." ]
+  ] ) ; # 
+  fhir:reaction ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"^^xsd:anyURI ;
+         fhir:l <https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis>
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://fhir.ee/allergy/Condition/AllergyCondition1> ;
+         fhir:reference [ fhir:v "Condition/AllergyCondition1" ]
+       ]
+     ] ) ;
+     fhir:manifestation ( [
+       fhir:concept [
+         fhir:coding ( [
+           a sct:271807003 ;
+           fhir:system [
+             fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+             fhir:l <http://snomed.info/sct>
+           ] ;
+           fhir:code [ fhir:v "271807003" ] ;
+           fhir:display [ fhir:v "Nahalööve" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:description [ fhir:v "koleluguonhirmus" ] ;
+     fhir:onset [ fhir:v "2024-11-11"^^xsd:date ] ;
+     fhir:severity [ fhir:v "mild" ] ;
+     fhir:exposureRoute [
+       fhir:coding ( [
+         a sct:448598008 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "448598008" ] ;
+         fhir:display [ fhir:v "Cutaneous route" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
