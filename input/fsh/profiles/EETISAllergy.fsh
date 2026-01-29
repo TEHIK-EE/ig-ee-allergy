@@ -53,7 +53,7 @@ Description: "A base profile for allergy and intolerance. (ee Tervishoiutöötaj
 * reaction.substance ^short = "Use https://fhir.ee/ValueSet/toimeained Nb! VS is from MedIn. NB!(ee Toimeainete loend Ravimiregistrist. NB! Ei ole Terminoloogiaserveris!)"
 * reaction.manifestation ^short = "How allergy is manifested. (ee Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile.)"
 * reaction.manifestation from $manifest-VS
-* reaction.severity ^short = "Severity of the reaction. (ee Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske)."
+* reaction.severity ^short = "Severity of the reaction. (ee Täheldatud reaktsiooni kliiniline tõsidus (näiteks kerge, mõõdukas, raske)."
 * reaction.severity from $severity-VS
 * reaction.onset ^short = "Date of reaction. (ee Kuupäev, millal reaktsioon esmakordselt täheldati.)"
 * reaction.exposureRoute ^short = "What was the route of exposure to the allergen. (ee Kuidas toimus kokkupuude ainega.)"
