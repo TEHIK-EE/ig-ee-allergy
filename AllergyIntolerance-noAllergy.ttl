@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/allergy/AllergyIntolerance/noAllergy> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "noAllergy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-no-allergy"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-no-allergy>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "et"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance noAllergy</b></p><a name=\"noAllergy\"> </a><a name=\"hcnoAllergy\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-allergy-intolerance-no-allergy.html\">EE TIS AllergyIntoleranceNoAllergy</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification presumed}\">Presumed</span></p><p><b>code</b>: <span title=\"Codes:\">No Known Allergy</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p><p><b>recordedDate</b>: 2025-12-13</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><code>PractitionerRole/$ee-pract-role</code></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical>
+       ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/allergyintolerance-verification>
+       ] ;
+       fhir:code [ fhir:v "presumed" ] ;
+       fhir:display [ fhir:v "Presumed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "716186003" ] ;
+       fhir:display [ fhir:v "No Known Allergy" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:l <https://fhir.ee/allergy/Patient/$ee-mpi-patient> ;
+     fhir:reference [ fhir:v "Patient/$ee-mpi-patient" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2025-12-13"^^xsd:date] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:l <https://fhir.ee/allergy/PractitionerRole/$ee-pract-role> ;
+       fhir:reference [ fhir:v "PractitionerRole/$ee-pract-role" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

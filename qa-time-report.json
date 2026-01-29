@@ -1,0 +1,738 @@
+{
+  "date" : "Thu, 29 Jan, 2026 14:27:24 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ig-ee-allergy.json",
+      "size" : 8314,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 60,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 96
+        },
+        {
+          "activity" : "validate",
+          "start" : 86,
+          "length" : 5045
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 91,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 61
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 139,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-AllergyBiologic.json",
+      "size" : 2208,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 40
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 91,
+          "length" : 4348
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 72
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 131,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-AllergyEnvironment.json",
+      "size" : 2281,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 9
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 16
+        },
+        {
+          "activity" : "validate",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 95,
+          "length" : 2494
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-AllergyFood.json",
+      "size" : 2226,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 98,
+          "length" : 2504
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-AllergyMedication.json",
+      "size" : 2435,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 100,
+          "length" : 1622
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 111,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-AllergyPatientReportedDrug.json",
+      "size" : 1517,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 8
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 102,
+          "length" : 2512
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-AllergyPatientReportedFood.json",
+      "size" : 1516,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 104,
+          "length" : 2574
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AllergyIntolerance-noAllergy.json",
+      "size" : 971,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 107,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Condition-AllergyCondition1.json",
+      "size" : 551,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 107,
+          "length" : 1040
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-allergy-condition.json",
+      "size" : 1071,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 54,
+          "length" : 42
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 60,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 876
+        },
+        {
+          "activity" : "validate",
+          "start" : 64,
+          "length" : 4693
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 91,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 130
+        },
+        {
+          "activity" : "generate2",
+          "start" : 112,
+          "length" : 1284
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 1557
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-allergy-diagnosis.json",
+      "size" : 1552,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 54,
+          "length" : 17
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 61,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 69,
+          "length" : 4525
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 57
+        },
+        {
+          "activity" : "generate2",
+          "start" : 113,
+          "length" : 146
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 63
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance-no-allergy.json",
+      "size" : 6987,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 10
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 54,
+          "length" : 2090
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 61,
+          "length" : 1016
+        },
+        {
+          "activity" : "validate",
+          "start" : 73,
+          "length" : 4191
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 91,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 108,
+          "length" : 229
+        },
+        {
+          "activity" : "generate2",
+          "start" : 113,
+          "length" : 329
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 260
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 139,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance.json",
+      "size" : 11796,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 56,
+          "length" : 2555
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 62,
+          "length" : 2484
+        },
+        {
+          "activity" : "validate",
+          "start" : 78,
+          "length" : 6541
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 91,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 109,
+          "length" : 268
+        },
+        {
+          "activity" : "generate2",
+          "start" : 113,
+          "length" : 333
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 224
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ee-tis-allergy-patient-reported.json",
+      "size" : 9585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 54,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 59,
+          "length" : 68
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 44
+        },
+        {
+          "activity" : "validate",
+          "start" : 84,
+          "length" : 1597
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 91,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 109,
+          "length" : 240
+        },
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 382
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 185
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 131,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 139,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/includes/fsh-link-references.md",
+      "size" : 925,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/includes/menu.xml",
+      "size" : 1738
+    },
+    {
+      "name" : "/input/pagecontent/search.xml",
+      "size" : 446,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 66
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/downloads.xml",
+      "size" : 1148,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 26
+        }
+      ]
+    },
+    {
+      "name" : "/input/pagecontent/page2.md",
+      "size" : 128
+    },
+    {
+      "name" : "/input/pagecontent/intolerance.md",
+      "size" : 107
+    },
+    {
+      "name" : "/input/pagecontent/contacts.md",
+      "size" : 373
+    },
+    {
+      "name" : "/input/pagecontent/index.md",
+      "size" : 2039
+    },
+    {
+      "name" : "/template/config",
+      "size" : 0,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/template/config/_config.yml",
+      "size" : 140
+    },
+    {
+      "name" : "/input/images",
+      "size" : 0
+    },
+    {
+      "name" : "/input/images/sample.png",
+      "size" : 2028720,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "/input/images/robots.txt",
+      "size" : 24
+    },
+    {
+      "name" : "/temp/pages/_includes/artifacts.xml",
+      "size" : 7119,
+      "processes" : [
+        {
+          "activity" : "generate2",
+          "start" : 114,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}
