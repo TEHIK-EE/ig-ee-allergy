@@ -60,3 +60,32 @@ Description: "A base profile for allergy and intolerance. (ee Tervishoiutöötaj
 * reaction.exposureRoute from $exposure-route-VS
 * reaction.description ^short = "Additional explanation of the allergy. (ee Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."
 * lastOccurrence 0..0
+
+* obeys ai-active-not-refuted
+* obeys ai-active-not-entered-in-error
+* obeys ai-resolved-not-refuted
+* obeys ai-resolved-not-entered-in-error
+
+Invariant: ai-active-not-refuted
+Description: "If clinicalStatus is active, verificationStatus must not be refuted."
+Severity: #error
+Expression: "clinicalStatus.coding.where(code='active').exists() implies verificationStatus.coding.where(code='refuted').empty()"
+
+
+Invariant: ai-active-not-entered-in-error
+Description: "If clinicalStatus is active, verificationStatus must not be entered-in-error."
+Severity: #error
+Expression: "clinicalStatus.coding.where(code='active').exists() implies verificationStatus.coding.where(code='entered-in-error').empty()"
+
+
+Invariant: ai-resolved-not-refuted
+Description: "If clinicalStatus is resolved, verificationStatus must not be refuted."
+Severity: #error
+Expression: "clinicalStatus.coding.where(code='resolved').exists() implies verificationStatus.coding.where(code='refuted').empty()"
+
+
+Invariant: ai-resolved-not-entered-in-error
+Description: "If clinicalStatus is resolved, verificationStatus must not be entered-in-error."
+Severity: #error
+Expression: "clinicalStatus.coding.where(code='resolved').exists() implies verificationStatus.coding.where(code='entered-in-error').empty()"
+
