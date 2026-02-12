@@ -6,6 +6,7 @@ Description: "Example of a diagnose related to allergy"
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-condition"
 * language = #et
 * clinicalStatus = #active
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
 * code.coding.system = $rhk-10
 * code.coding.code = #J30.1
 * code.coding.display = "Õietolmu põhjustatud allergiline riniit" 
