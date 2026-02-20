@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="AllergyPatientReportedDrug"/>
+  <meta>
+    <profile value="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported"/>
+  </meta>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance AllergyPatientReportedDrug</b></p><a name="AllergyPatientReportedDrug"> </a><a name="hcAllergyPatientReportedDrug"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-tis-allergy-patient-reported.html">EE TIS AllergyIntolerance Patient Reported</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>category</b>: Medication</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 293586001}">Aspirin allergy</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p><p><b>recordedDate</b>: 2012-12-13</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><code>Patient/$ee-mpi-patient</code></td></tr></table><p><b>note</b>: </p><blockquote><div><p>võtsin peavalurohtu ja läksin täiesti kärna</p>
+</div></blockquote><blockquote><p><b>reaction</b></p><h3>Manifestations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 3639002}">Glossoptosis</span></td></tr></table><p><b>description</b>: ja nii on</p><p><b>onset</b>: 2023-12-23</p><p><b>exposureRoute</b>: <span title="Codes:{http://snomed.info/sct 26643006}">Oral route</span></p></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <category value="medication"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="293586001"/>
+      <display value="Aspirin allergy"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/$ee-mpi-patient"/>
+  </patient>
+  <recordedDate value="2012-12-13"/>
+  <participant>
+    <actor>
+      <reference value="Patient/$ee-mpi-patient"/>
+    </actor>
+  </participant>
+  <note>
+    <text value="võtsin peavalurohtu ja läksin täiesti kärna"/>
+  </note>
+  <reaction>
+    <manifestation>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="3639002"/>
+          <display value="Glossoptosis"/>
+        </coding>
+      </concept>
+    </manifestation>
+    <description value="ja nii on"/>
+    <onset value="2023-12-23"/>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="AllergyMedication"/>
+  <meta>
+    <profile value="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"/>
+  </meta>
+  <language value="et"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance AllergyMedication</b></p><a name="AllergyMedication"> </a><a name="hcAllergyMedication"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-tis-allergy-intolerance.html">EE TIS AllergyIntolerance</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/allergy-intolerance-type allergy}">Allergy</span></p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title="Codes:{https://fhir.ee/CodeSystem/allergia-allergeenid 764146007}">Substance with penicillin structure</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p><p><b>onset</b>: 2024-12-12</p><p><b>recordedDate</b>: 2012-12-13</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><code>PractitionerRole/$ee-pract-role</code></td></tr></table><p><b>note</b>: </p><blockquote><div><p>Hirmsasti sügeleb.</p>
+</div></blockquote><blockquote><p><b>reaction</b></p><p><b>Diagnose of allergy/intolerance</b>: <a href="Condition-AllergyCondition1.html">Condition Õietolmu põhjustatud allergiline riniit</a></p><p><b>substance</b>: <span title="Codes:{https://fhir.ee/CodeSystem/toimeained 8744}">bensüülpenitsilliin</span></p><h3>Manifestations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Concept</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 40275004}">Kontaktdermatiit</span></td></tr></table><p><b>description</b>: koleluguonhirmus</p><p><b>onset</b>: 2024-11-11</p><p><b>severity</b>: Mild</p><p><b>exposureRoute</b>: <span title="Codes:{http://snomed.info/sct 447694001}">Respiratory tract route</span></p></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/allergy-intolerance-type"/>
+      <code value="allergy"/>
+      <display value="Allergy"/>
+    </coding>
+  </type>
+  <category value="medication"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/allergia-allergeenid"/>
+      <code value="764146007"/>
+      <display value="Substance with penicillin structure"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/$ee-mpi-patient"/>
+  </patient>
+  <onsetDateTime value="2024-12-12"/>
+  <recordedDate value="2012-12-13"/>
+  <participant>
+    <actor>
+      <reference value="PractitionerRole/$ee-pract-role"/>
+    </actor>
+  </participant>
+  <note>
+    <text value="Hirmsasti sügeleb."/>
+  </note>
+  <reaction>
+    <extension url="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis">
+      <valueReference>
+        <reference value="Condition/AllergyCondition1"/>
+      </valueReference>
+    </extension>
+    <substance>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/toimeained"/>
+        <code value="8744"/>
+        <display value="bensüülpenitsilliin"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <concept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="40275004"/>
+          <display value="Kontaktdermatiit"/>
+        </coding>
+      </concept>
+    </manifestation>
+    <description value="koleluguonhirmus"/>
+    <onset value="2024-11-11"/>
+    <severity value="mild"/>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="447694001"/>
+        <display value="Respiratory tract route"/>
+      </coding>
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>

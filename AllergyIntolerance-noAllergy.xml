@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="noAllergy"/>
+  <meta>
+    <profile value="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-no-allergy"/>
+  </meta>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance noAllergy</b></p><a name="noAllergy"> </a><a name="hcnoAllergy"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-tis-allergy-intolerance-no-allergy.html">EE TIS AllergyIntoleranceNoAllergy</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification presumed}">Presumed</span></p><p><b>code</b>: <span title="Codes:">No Known Allergy</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p><p><b>recordedDate</b>: 2025-12-13</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><code>PractitionerRole/$ee-pract-role</code></td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="presumed"/>
+      <display value="Presumed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <code value="716186003"/>
+      <display value="No Known Allergy"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/$ee-mpi-patient"/>
+  </patient>
+  <recordedDate value="2025-12-13"/>
+  <participant>
+    <actor>
+      <reference value="PractitionerRole/$ee-pract-role"/>
+    </actor>
+  </participant>
+</AllergyIntolerance>

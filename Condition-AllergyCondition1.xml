@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="AllergyCondition1"/>
+  <meta>
+    <profile value="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-condition"/>
+  </meta>
+  <language value="et"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="et" lang="et"><p class="res-header-id"><b>Generated Narrative: Condition AllergyCondition1</b></p><a name="AllergyCondition1"> </a><a name="hcAllergyCondition1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: et</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-tis-allergy-condition.html">EE TIS Condition</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{https://fhir.ee/CodeSystem/rhk-10 J30.1}">Õietolmu põhjustatud allergiline riniit</span></p><p><b>subject</b>: <code>Patient/$ee-mpi-patient</code></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <code>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/rhk-10"/>
+      <code value="J30.1"/>
+      <display value="Õietolmu põhjustatud allergiline riniit"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/$ee-mpi-patient"/>
+  </subject>
+</Condition>

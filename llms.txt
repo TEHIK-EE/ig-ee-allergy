@@ -1,0 +1,40 @@
+# ig-ee-allergy#0.1.0: EE TIS Allergy IG
+
+## Pages
+
+* [Home](index.md)
+* [Sample page 2](page2.md)
+* [Intolerance](intolerance.md)
+* [Contacts](contacts.md)
+* [Artifacts Summary](artifacts.md)
+* [Search](search.md)
+* [Downloads](downloads.md)
+
+## Resources
+
+### Resource Profiles
+
+* [EE TIS Condition](StructureDefinition-ee-tis-allergy-condition.md)
+* [EE TIS AllergyIntoleranceNoAllergy](StructureDefinition-ee-tis-allergy-intolerance-no-allergy.md)
+* [EE TIS AllergyIntolerance](StructureDefinition-ee-tis-allergy-intolerance.md)
+* [EE TIS AllergyIntolerance Patient Reported](StructureDefinition-ee-tis-allergy-patient-reported.md)
+
+### Extensions
+
+* [Diagnose of allergy/intolerance](StructureDefinition-ee-tis-allergy-diagnosis.md)
+
+### ImplementationGuides
+
+* [EE TIS Allergy IG](index.md)
+
+### Examples
+
+* [AllergyBiologic (AllergyIntolerance)](AllergyIntolerance-AllergyBiologic.md)
+* [AllergyEnvironment (AllergyIntolerance)](AllergyIntolerance-AllergyEnvironment.md)
+* [AllergyFood (AllergyIntolerance)](AllergyIntolerance-AllergyFood.md)
+* [AllergyMedication (AllergyIntolerance)](AllergyIntolerance-AllergyMedication.md)
+* [AllergyMedicationFourSubstances (AllergyIntolerance)](AllergyIntolerance-AllergyMedicationFourSubstances.md)
+* [AllergyPatientReportedDrug (AllergyIntolerance)](AllergyIntolerance-AllergyPatientReportedDrug.md)
+* [AllergyPatientReportedFood (AllergyIntolerance)](AllergyIntolerance-AllergyPatientReportedFood.md)
+* [noAllergy (AllergyIntolerance)](AllergyIntolerance-noAllergy.md)
+* [AllergyCondition1 (Condition)](Condition-AllergyCondition1.md)

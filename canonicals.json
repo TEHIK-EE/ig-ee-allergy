@@ -1,0 +1,42 @@
+[{
+  "id" : "ig-ee-allergy",
+  "type" : "ImplementationGuide",
+  "url" : "https://fhir.ee/allergy/ImplementationGuide/ig-ee-allergy",
+  "version" : "0.1.0",
+  "name" : "EETISIGAllergy"
+},
+{
+  "id" : "ee-tis-allergy-condition",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-condition",
+  "version" : "0.1.0",
+  "name" : "EETISAllergyCondition"
+},
+{
+  "id" : "ee-tis-allergy-diagnosis",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis",
+  "version" : "0.1.0",
+  "name" : "ExtensionEETISAllergyDiagnosis"
+},
+{
+  "id" : "ee-tis-allergy-intolerance",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance",
+  "version" : "0.1.0",
+  "name" : "EETISAllergyIntolerance"
+},
+{
+  "id" : "ee-tis-allergy-intolerance-no-allergy",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-no-allergy",
+  "version" : "0.1.0",
+  "name" : "EETISAllergyIntoleranceNoAllergy"
+},
+{
+  "id" : "ee-tis-allergy-patient-reported",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-patient-reported",
+  "version" : "0.1.0",
+  "name" : "EETISAllergyPatientReported"
+}]

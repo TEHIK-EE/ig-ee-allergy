@@ -1,0 +1,7 @@
+{
+  "version" : "0.1.0",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20260220135417",
+  "name" : "ig-ee-allergy",
+  "jurisdiction" : "urn:iso:std:iso:3166#EE"
+}
