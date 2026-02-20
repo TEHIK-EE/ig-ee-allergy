@@ -51,6 +51,7 @@ Description: "A base profile for allergy and intolerance. (ee Tervishoiutöötaj
 * reaction.extension ^short = "This is a reference to a Condition-extension which will be replaced in the future when Condition IG is ready and available."
 * reaction.substance ^short = "Main ingredient which caused allergy. (ee Toimeaine, mis põhjustas reaktsiooni.Kasutatakse kategooria |Ravim| korral.)"
 * reaction.substance ^short = "Use https://fhir.ee/ValueSet/toimeained Nb! VS is from MedIn. NB!(ee Toimeainete loend Ravimiregistrist. NB! Ei ole Terminoloogiaserveris!)"
+* reaction.substance from $toimeained-VS
 * reaction.manifestation ^short = "How allergy is manifested. (ee Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile.)"
 * reaction.manifestation from $manifest-VS
 * reaction.severity ^short = "Severity of the reaction. (ee Täheldatud reaktsiooni kliiniline tõsidus (näiteks kerge, mõõdukas, raske)."

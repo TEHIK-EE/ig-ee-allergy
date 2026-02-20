@@ -21,7 +21,7 @@ Description: "An example of a medication allergy."
 * criticality = $criticality#high "High Risk"
 * reaction.extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"
 * reaction.extension[=].valueReference = Reference(AllergyCondition1) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
-* reaction.substance = $sct#3145006 "Penicillic acid"
+* reaction.substance = $toimeained#8744 "bensüülpenitsilliin"
 * reaction.manifestation.concept.coding.system = $sct
 * reaction.manifestation.concept.coding.code = #40275004
 * reaction.manifestation.concept.coding.display = "Kontaktdermatiit"
