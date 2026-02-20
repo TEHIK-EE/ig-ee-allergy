@@ -21,7 +21,7 @@ Alias: $allergy-category-VS = https://fhir.ee/ValueSet/allergia-kategooria //htt
 Alias: $allergy-category = http://hl7.org/fhir/allergy-intolerance-category
 
 Alias: $allergy-code-VS = https://fhir.ee/ValueSet/allergia-allergeenid
-Alias: $allergy-code = http://hl7.org/fhir/ValueSet/allergyintolerance-code
+Alias: $allergy-code = https://fhir.ee/CodeSystem/allergia-allergeenid
 
 Alias: $allergy-type = http://hl7.org/fhir/allergy-intolerance-type
 Alias: $allergy-type-VS = https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp
