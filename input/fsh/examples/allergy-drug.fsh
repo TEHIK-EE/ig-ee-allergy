@@ -2,11 +2,11 @@ Instance: AllergyMedication
 InstanceOf: AllergyIntolerance
 Title: "Example of a medication allergy"
 Description: "An example of a medication allergy."
-* meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"
+* meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-medication"
 * language = #et
-* code.coding[0].system = $allergy-code
-* code.coding[=].code = #764146007 
-* code.coding[=].display = "Substance with penicillin structure"
+* code.coding[0].system = $atc-ee
+* code.coding[=].code = #J01C
+* code.coding[=].display = "Beetalaktaamantibiootikumid, penitsilliinid"
 * patient = Reference(Patient/$ee-mpi-patient)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #medication

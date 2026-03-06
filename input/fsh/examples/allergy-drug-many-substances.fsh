@@ -21,6 +21,8 @@ Description: "Example of a medication allergy where several different penicillin
 * criticality = $criticality#high "High Risk"
 * reaction[0].extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"
 * reaction[0].extension[=].valueReference = Reference(AllergyCondition1) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
+* reaction[0].extension[+].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-reaction-grouper"
+* reaction[0].extension[=].valueString = "12345"
 * reaction[0].substance = $toimeained#8744 "bensüülpenitsilliin"
 * reaction[0].manifestation.concept.coding.system = $sct
 * reaction[0].manifestation.concept.coding.code = #2129002
@@ -29,14 +31,20 @@ Description: "Example of a medication allergy where several different penicillin
 * reaction[0].exposureRoute = $sct#447694001 "Respiratory tract route"
 * reaction[0].onset = "2024-11-11"
 * reaction[0].description = "Osadele penitsilliinitüvedele allergiline"
+* reaction[1].extension[+].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-reaction-grouper"
+* reaction[1].extension[=].valueString = "12345"
 * reaction[1].substance = $toimeained#11212 "benetamiinpenitsilliin"
 * reaction[1].manifestation.concept.coding.system = $sct
 * reaction[1].manifestation.concept.coding.code = #2129002
 * reaction[1].manifestation.concept.coding.display = "Neeluturse"
+* reaction[2].extension[+].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-reaction-grouper"
+* reaction[2].extension[=].valueString = "12345"
 * reaction[2].substance = $toimeained#11828 "bensatiinbensüülpenitsilliin"
 * reaction[2].manifestation.concept.coding.system = $sct
 * reaction[2].manifestation.concept.coding.code = #2129002
 * reaction[2].manifestation.concept.coding.display = "Neeluturse"
+* reaction[3].extension[+].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-reaction-grouper"
+* reaction[3].extension[=].valueString = "12345"
 * reaction[3].substance = $toimeained#10920 "bensatiinfenoksümetüülpenitsilliin"
 * reaction[3].manifestation.concept.coding.system = $sct
 * reaction[3].manifestation.concept.coding.code = #2129002
