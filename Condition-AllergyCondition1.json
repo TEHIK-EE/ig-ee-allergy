@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Condition",
+  "id" : "AllergyCondition1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-condition"]
+  },
+  "language" : "et",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"et\" lang=\"et\"><p class=\"res-header-id\"><b>Generated Narrative: Condition AllergyCondition1</b></p><a name=\"AllergyCondition1\"> </a><a name=\"hcAllergyCondition1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: et</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-tis-allergy-condition.html\">EE TIS Condition</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/rhk-10 J30.1}\">Õietolmu põhjustatud allergiline riniit</span></p><p><b>subject</b>: <code>Patient/$ee-mpi-patient</code></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/rhk-10",
+      "code" : "J30.1",
+      "display" : "Õietolmu põhjustatud allergiline riniit"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/$ee-mpi-patient"
+  }
+}
