@@ -19,6 +19,7 @@ Description: "A profile for allergy and intolerance to medication. (ee Tervishoi
 * code 1..1
 * code.id 0..0
 * code.extension 0..0
+* code.coding 0..1
 * code from $atc-ee-VS
 * code ^short = "Code for medication allergy comes from ATC classification. (ee ATC EI OLE Terminoloogiaserveris, koodid valideeritakse läbi MedIni)"
 * code.text ^short = "Description of allergy when there is no suitable code. (ee Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.)"
