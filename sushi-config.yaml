@@ -169,6 +169,8 @@ pages:
     title: About
   contacts.md: 
     title: Contacts
+  search.xml:
+    title: Search
   changes.xml:
     title: Changes
   documentation.md:
