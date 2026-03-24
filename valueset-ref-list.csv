@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/condition-clinical,5.0.0,draft,"2.16.840.1.113883.4.642.3.155,2.16.840.1.113883.4.642.3.164,2.16.840.1.113883.4.642.2.74",ConditionClinicalStatusCodes,Condition Clinical Status Codes,"Preferred value set for Condition Clinical Status.","StructureDefinition/ee-tis-allergy-condition","THO"
