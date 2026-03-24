@@ -151,16 +151,28 @@ dependencies:
 pages:
   index.md:
     title: Home
-  intolerance.md:
-    title: Intolerance
-  page2.md:
-    title: Sample page 2
+  guidance.md:
+    title: Guidance
+  operations.md:
+    title: Operations  
+  knownissues.md:
+    title: Known Issues    
   downloads.xml:
     title: Downloads
-  contacts.md:
+  controls.md:
+    title: Controls
+  checklist.md:
+    title: Checklist for developers
+  usecases.md:
+    title: Use cases
+  other.md:
+    title: About
+  contacts.md: 
     title: Contacts
-  search.xml:
-    title: Search
+  changes.xml:
+    title: Changes
+  documentation.md:
+    title: Documentation
 
 
 # The ImplementationGuide resource defines several other properties
@@ -192,14 +204,19 @@ pages:
 # include a `menu.xml` file in input/includes.
 menu:
   Home: index.html
-  Guidance:
-    Intolerance: intolerance.html
-    Page2: page2.html
+  Guidance: 
+    Operations: operations.html
+    Documentation: documentation.html
+    Controls: controls.html
+    Use cases: usecases.html
+    Checklist for developers: checklist.html
   Artifacts: artifacts.html
-  About:
+  About : 
+    Known Issues: knownissues.html
     Downloads: downloads.html
     Contacts: contacts.html
-  Table of Contents: toc.html
+  Changes: changes.html
+  Table of contents: toc.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
