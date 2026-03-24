@@ -38,3 +38,5 @@ Alias: $criticality = http://hl7.org/fhir/allergy-intolerance-criticality
 Alias: $exposure-route-VS = https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis	
 Alias: $manifest-VS = https://fhir.ee/ValueSet/allergia-reaktsiooni-avaldumine
 
+Alias: $sugu = https://fhir.ee/ValueSet/administratiivne-sugu
+

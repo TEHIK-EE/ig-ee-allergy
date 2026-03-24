@@ -14,7 +14,7 @@ Description: "Patient Leena Lööve"
 * name.use = #official
 * name.family = "Lööve  "
 * name.given = "Leena"
-* gender = #female "naine"
+* gender = $sugu#N "naine"
 //* birthDate = "1983-01-11"
 //* birthDate.extension.url = "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator"
 //* birthDate.extension.valueCoding = $ee-date-accuracy-indicator#AAA "Day, month and year are accurate"
@@ -24,7 +24,7 @@ Description: "Patient Leena Lööve"
 //* address.extension[=].valueCoding = $ehak#0387
 //* address.extension[+].url = "http://hl7.org/fhir/StructureDefinition/address-official"
 //* address.extension[=].valueBoolean = true
-//* address.use = #work
+* address.use = #work
 //* address.text = "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10"
 //* address.city = "Tallinn"
 //* address.state = "Harju"
