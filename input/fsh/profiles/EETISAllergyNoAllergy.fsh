@@ -10,6 +10,7 @@ Description: "A profile when there is NO KNOWN allergy/intolerance."
 //* encounter ^short = "Reference to a contact during which the allergy was discovered. (ee Viide kontaktile, mille käigus allergia tuvastati.)"
 * participant 0..1 
 * participant.actor only Reference(Patient or RelatedPerson or PractitionerRole)
+* participant.actor ^short = "When SPD is published, reference must be to SPDPractitionerRole! (ee Kui SPD teenus valmib, peab viide olema sellele.)"
 * participant.function = #author
 * participant.extension 0..0
 * participant.id 0..0

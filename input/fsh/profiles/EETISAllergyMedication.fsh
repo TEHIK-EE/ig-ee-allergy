@@ -9,6 +9,7 @@ Description: "A profile for allergy and intolerance to medication. (ee Tervishoi
 * encounter ^short = "Reference to a contact during which the allergy was discovered. (ee Viide kontaktile, mille käigus allergia tuvastati.)"
 * participant 1..1 
 * participant.actor only Reference(PractitionerRole)
+* participant.actor ^short = "When SPD is published, reference must be to SPDPractitionerRole! (ee Kui SPD teenus valmib, peab viide olema sellele.)"
 * participant.function = #author
 * participant.extension 0..0
 * participant.id 0..0
