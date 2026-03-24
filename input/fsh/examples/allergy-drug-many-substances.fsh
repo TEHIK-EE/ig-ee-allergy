@@ -12,7 +12,7 @@ Description: "Example of a medication allergy where several different penicillin
 * category = #medication
 * type.coding.code = #allergy
 * type.coding.system = $allergy-type
-* type.coding.display = "Allergy"
+* type.coding.display = "Allergia"
 * recordedDate = "2012-12-13" 
 * clinicalStatus = $clinical-status#active "Active"
 * verificationStatus = $verification-status#confirmed "Confirmed"

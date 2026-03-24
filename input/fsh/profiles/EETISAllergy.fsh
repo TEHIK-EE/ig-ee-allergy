@@ -40,7 +40,7 @@ Description: "A base profile for allergy and intolerance. (ee Tervishoiutöötaj
 * verificationStatus from $verification-status-VS 
 * criticality ^short = "Criticality of allergy. (ee Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid.)"
 * criticality from $criticality-VS // "siia tuleb loend"
-* type ^short = "Allergy, intolerance or non-allerganic reaction. (ee Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega).)"
+* type ^short = "Allergy or intolerance if known. (ee Kirjeldab, kas seisund on allergia või talumatus. Kui eristus pole võimalik jääb see element TÜHJAKS)"
 * type from $allergy-type-VS
 * reaction 1..*
 * reaction.id 0..0

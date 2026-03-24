@@ -12,7 +12,7 @@ Description: "An example of a biologic allergy."
 * category = #biologic
 * type.coding.code = #allergy
 * type.coding.system = $allergy-type
-* type.coding.display = "Allergy"
+* type.coding.display = "Allergia"
 * recordedDate = "2012-12-13" 
 * clinicalStatus = $clinical-status#active "Active"
 * verificationStatus = $verification-status#confirmed "Confirmed"
