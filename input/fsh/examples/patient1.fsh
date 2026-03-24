@@ -14,7 +14,7 @@ Description: "Patient Leena Lööve"
 * name.use = #official
 * name.family = "Lööve  "
 * name.given = "Leena"
-* gender = #female
+* gender = #naine
 //* birthDate = "1983-01-11"
 //* birthDate.extension.url = "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator"
 //* birthDate.extension.valueCoding = $ee-date-accuracy-indicator#AAA "Day, month and year are accurate"
