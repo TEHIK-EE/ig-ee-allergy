@@ -7,7 +7,7 @@ Description: "An example of a medication allergy."
 * code.coding[0].system = $atc-ee
 * code.coding[=].code = #J01C
 * code.coding[=].display = "Beetalaktaamantibiootikumid, penitsilliinid"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #medication
 * type.coding.code = #allergy

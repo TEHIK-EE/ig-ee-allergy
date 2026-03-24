@@ -7,7 +7,7 @@ Description: "Example of a medication allergy where several different penicillin
 * code.coding[0].system = $allergy-code
 * code.coding[=].code = #764146007 
 * code.coding[=].display = "Substance with penicillin structure"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #medication
 * type.coding.code = #allergy

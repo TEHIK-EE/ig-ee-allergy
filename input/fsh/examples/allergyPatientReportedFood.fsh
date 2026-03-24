@@ -10,7 +10,7 @@ Description: "A food allergy reported by patient."
 * code.coding[0].system = $sct
 * code.coding[=].code = #91938006
 * code.coding[=].display = "Allergy to strawberries"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #food
 * recordedDate = "2012-12-13" 

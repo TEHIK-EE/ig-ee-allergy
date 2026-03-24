@@ -7,7 +7,7 @@ Description: "An example of a biologic allergy."
 * code.coding[0].system = $sct
 * code.coding[=].code = #424213003
 * code.coding[=].display = "Allergy to bee venom"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #biologic
 * type.coding.code = #allergy

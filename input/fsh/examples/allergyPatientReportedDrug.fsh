@@ -10,7 +10,7 @@ Description: "A medication allergy reported by patient."
 * code.coding[0].system = $sct
 * code.coding[=].code = #293586001
 * code.coding[=].display = "Aspirin allergy"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #medication
 * recordedDate = "2012-12-13" 

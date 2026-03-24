@@ -7,7 +7,7 @@ Description: "An example of a environmental allergy."
 * code.coding[0].system = $sct
 * code.coding[=].code = #1003755004
 * code.coding[=].display = "Allergy to Hevea brasiliensis latex protein"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #environment
 * type.coding.code = #allergy

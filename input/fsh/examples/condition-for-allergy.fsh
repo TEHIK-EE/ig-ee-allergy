@@ -10,4 +10,4 @@ Description: "Example of a diagnose related to allergy"
 * code.coding.system = $rhk-10
 * code.coding.code = #J30.1
 * code.coding.display = "Õietolmu põhjustatud allergiline riniit" 
-* subject = Reference(Patient/$ee-mpi-patient)
+* subject = Reference(Patient/patientExampleMPI)

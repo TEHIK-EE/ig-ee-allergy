@@ -7,7 +7,7 @@ Description: "An example of a food allergy."
 * code.coding[0].system = $sct
 * code.coding[=].code = #860604008
 * code.coding[=].display = "Allergy to apple"
-* patient = Reference(Patient/$ee-mpi-patient)
+* patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #food
 * type.coding.code = #allergy
