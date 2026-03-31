@@ -30,6 +30,8 @@ Description: "A profile for allergy or intolerance which is reported by patient 
 * recordedDate ^short = "Date when the allergy was first time recorded. (ee Kuupäev, millal allergia esimest korda registreeriti (määratakse süsteemi poolt automaatselt allergia esimese versiooni salvestamisel, järgmistes versioonides ei muudeta).)"
 * onsetPeriod.end 0..1 
 * onsetPeriod.end ^short = "Date when allergy was considered resolved/not-active. (ee Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."
+* onsetDateTime 0..0
+* onsetPeriod.start 0..0 
 * onsetAge 0..0
 * onsetRange 0..0
 * onsetString 0..0
