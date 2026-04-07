@@ -17,7 +17,7 @@ Description: "Example of a medication allergy where several different penicillin
 * clinicalStatus = $clinical-status#active "Active"
 * verificationStatus = $verification-status#confirmed "Confirmed"
 * note.text = "Hirmsasti sügeleb."
-* onsetDateTime = "2024-12-12"
+//* onsetDateTime = "2024-12-12"
 * criticality = $criticality#high "High Risk"
 * reaction[0].extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-diagnosis"
 * reaction[0].extension[=].valueReference = Reference(AllergyCondition1) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition" //Reference(Condition/$allergy-condition) //"https://fhir.ee/StructureDefinition/ee-tis-allergy-condition"
