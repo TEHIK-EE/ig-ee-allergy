@@ -1,6 +1,6 @@
 Instance: AllergyMedicationFourSubstances
 InstanceOf: AllergyIntolerance
-Title: "An example of a medication allergy, reaction with many substances."
+Title: "Example of a medication allergy, reaction with many substances."
 Description: "Example of a medication allergy where several different penicillin related substances cause reaction"
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-medication"
 * language = #et

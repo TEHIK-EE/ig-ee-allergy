@@ -12,7 +12,7 @@ Description: "Patient Leena Lööve"
 * identifier[=].assigner.display = "Estonian Police and Board Agency"
 * active = true
 * name.use = #official
-* name.family = "Lööve  "
+* name.family = "Lööve"
 * name.given = "Leena"
 * gender = $sugu#female "naine"
 //* birthDate = "1983-01-11"
