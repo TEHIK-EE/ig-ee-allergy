@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/allergy/AllergyIntolerance/example> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><p><b>Allergy probability</b>: <span title=\"Codes:{https://fhir.ee/CodeSystem/valu-esinemise-sagedus 02}\">Esines 1-2 päeva vältel viimase 3 päeva jooksul</span></p><p><b>code</b>: <span title=\"Codes:\">allergeen</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability"^^xsd:anyURI ;
+       fhir:l <https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://fhir.ee/CodeSystem/valu-esinemise-sagedus"^^xsd:anyURI ;
+           fhir:l <https://fhir.ee/CodeSystem/valu-esinemise-sagedus>
+         ] ;
+         fhir:code [ fhir:v "02" ] ;
+         fhir:display [ fhir:v "Esines 1-2 päeva vältel viimase 3 päeva jooksul" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:text [ fhir:v "allergeen" ]
+  ] ; # 
+  fhir:patient [
+     fhir:l <https://fhir.ee/allergy/Patient/$ee-mpi-patient> ;
+     fhir:reference [ fhir:v "Patient/$ee-mpi-patient" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
