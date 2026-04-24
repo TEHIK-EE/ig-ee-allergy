@@ -18,6 +18,8 @@ Description: "A profile for allergy or intolerance which is reported by patient 
 * code ^short = "Allergy code. (ee Allergeenile vastav standardiseeritud kood. Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik.)"
 * code 1..1
 * code from $allergy-code-VS  
+* code.coding.code 1..1
+* code.coding.system 1..1
 * code.text ^short = "Description of allergy when there is no suitable code. ( ee Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.)"
 * code.id 0..0
 * code.extension 0..0

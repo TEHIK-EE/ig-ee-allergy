@@ -8,8 +8,8 @@ Description: "A medication allergy reported by patient."
 //* extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability" //0 tähistab esimest extensioni
 //* extension[=].valueCodeableConcept = $valu#02 "Esines 1-2 päeva vältel viimase 3 päeva jooksul" // = tähendab, et sama loend
 * code.coding[0].system = $sct
-* code.coding[=].code = #293586001
-* code.coding[=].display = "Aspirin allergy"
+* code.coding[=].code = #372665008
+* code.coding[=].display = "Non-steroidal anti-inflammatory agenty"
 * patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #medication
@@ -18,8 +18,8 @@ Description: "A medication allergy reported by patient."
 //* verificationStatus = $verification#presumed "Presumed"
 //* reaction.substance.coding = $toimeained#9773 "atsetüülsalitsüülhape"
 * reaction.manifestation.concept.coding.system = $sct
-* reaction.manifestation.concept.coding.code = #3639002	
-* reaction.manifestation.concept.coding.display = "Glossoptosis"
+* reaction.manifestation.concept.coding.code = #40275004	
+* reaction.manifestation.concept.coding.display = "Kontaktdermatiit"
 * reaction.onset = "2023-12-23"
 * reaction.exposureRoute.coding = $sct#26643006	"Oral route"
 * reaction.description = "ja nii on"

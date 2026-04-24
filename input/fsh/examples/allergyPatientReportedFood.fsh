@@ -8,8 +8,8 @@ Description: "A food allergy reported by patient."
 //* extension[0].url = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability" //0 tähistab esimest extensioni
 //* extension[=].valueCodeableConcept = $valu#02 "Esines 1-2 päeva vältel viimase 3 päeva jooksul" // = tähendab, et sama loend
 * code.coding[0].system = $sct
-* code.coding[=].code = #91938006
-* code.coding[=].display = "Allergy to strawberries"
+* code.coding[=].code = #762952008
+* code.coding[=].display = "Peanut"
 * patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(Patient/$ee-mpi-patient)
 * category = #food
@@ -17,9 +17,9 @@ Description: "A food allergy reported by patient."
 * clinicalStatus = $clinical-status#active "Active"
 //* verificationStatus = $verification#presumed "Presumed"
 * reaction.manifestation.concept.coding.system = $sct
-* reaction.manifestation.concept.coding.code = #168000 
-* reaction.manifestation.concept.coding.display = "Typhlolithiasis"
+* reaction.manifestation.concept.coding.code = #40275004 
+* reaction.manifestation.concept.coding.display = "Kontaktdermatiit"
 * reaction.onset = "2023-12-23"
 * reaction.exposureRoute.coding = $sct#47625008	"Intravenous route"
 * reaction.description = "ja nii on"
-* note.text = "sõin maasikaidja hakkasin sügelema"
+* note.text = "sõin pähkleid hakkasin sügelema"

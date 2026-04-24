@@ -21,6 +21,8 @@ Description: "A base profile for allergy and intolerance. (ee Tervishoiutöötaj
 * code.id 0..0
 * code.extension 0..0
 * code.coding 0..1
+* code.coding.code 1..1
+* code.coding.system 1..1
 * code from $allergy-code-VS
 * code.text ^short = "Description of allergy when there is no suitable code. (ee Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.)"
 * category ^short = "Category of allergy. (ee Allergeeni üldine kategooria.)"

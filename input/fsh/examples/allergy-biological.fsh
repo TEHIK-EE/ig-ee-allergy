@@ -5,8 +5,8 @@ Description: "An example of a biologic allergy."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"
 * language = #et
 * code.coding[0].system = $sct
-* code.coding[=].code = #424213003
-* code.coding[=].display = "Allergy to bee venom"
+* code.coding[=].code = #288328004
+* code.coding[=].display = "Bee venom"
 * patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #biologic

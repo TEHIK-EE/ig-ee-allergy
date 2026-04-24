@@ -5,8 +5,8 @@ Description: "An example of a environmental allergy."
 * meta.profile = "https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance"
 * language = #et
 * code.coding[0].system = $sct
-* code.coding[=].code = #1003755004
-* code.coding[=].display = "Allergy to Hevea brasiliensis latex protein"
+* code.coding[=].code = #111088007
+* code.coding[=].display = "Latex"
 * patient = Reference(Patient/patientExampleMPI)
 * participant.actor = Reference(PractitionerRole/$ee-pract-role)
 * category = #environment
