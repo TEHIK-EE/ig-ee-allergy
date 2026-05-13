@@ -151,30 +151,20 @@ dependencies:
 pages:
   index.md:
     title: Home
-  guidance.md:
-    title: Guidance
-  operations.md:
-    title: Operations  
+  allergy-api.md:
+    title: Allergy API
   knownissues.md:
-    title: Known Issues    
+    title: Known Issues
   downloads.xml:
     title: Downloads
-  controls.md:
-    title: Controls
-  checklist.md:
-    title: Checklist for developers
-  usecases.md:
-    title: Use cases
   other.md:
     title: About
-  contacts.md: 
+  contacts.md:
     title: Contacts
   search.xml:
     title: Search
   changes.xml:
     title: Changes
-  documentation.md:
-    title: Documentation
 
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -205,14 +195,10 @@ pages:
 # include a `menu.xml` file in input/includes.
 menu:
   Home: index.html
-  Guidance: 
-    Operations: operations.html
-    Documentation: documentation.html
-    Controls: controls.html
-    Use cases: usecases.html
-    Checklist for developers: checklist.html
+  Guidance:
+    Allergy API: allergy-api.html
   Artifacts: artifacts.html
-  About : 
+  About:
     Known Issues: knownissues.html
     Downloads: downloads.html
     Contacts: contacts.html
