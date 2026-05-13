@@ -1,0 +1,19 @@
+{
+  "url" : "https://fhir.ee/allergy/ImplementationGuide/ig-ee-allergy",
+  "name" : "EETISIGAllergy",
+  "title" : "EE TIS Allergy IG",
+  "description" : "TEHIK IG starter project to Allergy",
+  "status" : "draft",
+  "package-id" : "ig-ee-allergy",
+  "ig-ver" : "0.1.0",
+  "date" : "Wed, 13 May, 2026 11:26:40 +0000",
+  "dateISO8601" : "2026-05-13T11:26:40+00:00",
+  "errs" : 19,
+  "warnings" : 238,
+  "hints" : 36,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2024544080
+}

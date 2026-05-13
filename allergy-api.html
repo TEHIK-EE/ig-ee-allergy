@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Allergy API - EE TIS Allergy IG v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/tehik.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a id="project-logo" no-external="true" href="https://www.tehik.ee">
+    <img height="70" src="assets/images/tehik-logo.png"/>
+  </a>
+</div>
+
+<!-- Right logo - for example the FHIR logo --><!-- Make sure you have authorization to use the FHIR logo --><!--
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+  </div>
+-->
+<!-- search icon - if you want -->
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="search.html"><img alt="Search FHIR"
+      src="assets/images/search.png"/></a>
+</div>
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">EE TIS Allergy IG</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+  Estonia
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="allergy-api.html">Allergy API</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">About
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="knownissues.html">Known Issues</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changes.html">Changes</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of contents</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Allergy API</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">EE TIS Allergy IG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://fhir.ee/allergy/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Allergy API</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#allergia-lisamine" id="markdown-toc-allergia-lisamine">Allergia lisamine</a></li>
+  <li><a href="#allergia-uuendamine" id="markdown-toc-allergia-uuendamine">Allergia uuendamine</a></li>
+  <li><a href="#allergia-kustutamine" id="markdown-toc-allergia-kustutamine">Allergia kustutamine</a></li>
+  <li><a href="#allergia-pärimine" id="markdown-toc-allergia-pärimine">Allergia pärimine</a></li>
+  <li><a href="#capabilitystatement" id="markdown-toc-capabilitystatement">CapabilityStatement</a></li>
+  <li><a href="#profiilid" id="markdown-toc-profiilid">Profiilid</a></li>
+  <li><a href="#laiendused" id="markdown-toc-laiendused">Laiendused</a></li>
+  <li><a href="#ärireeglid" id="markdown-toc-ärireeglid">Ärireeglid</a></li>
+  <li><a href="#veakoodid" id="markdown-toc-veakoodid">Veakoodid</a></li>
+</ul>
+
+</div>
+<p>Käesolevas juhendis kirjeldatakse ALGY (Allergiaandmete mikroteenus) toetatud otspunktid ja
+operatsioonid, operatsioonide üldine kirjeldus, parameetrid, ärireeglid ja päringu ja vastuse näited.</p>
+
+<p>ALGY teenuse FHIR API kasutab FHIR R5 ressursi <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code> ja toetab loomist (POST), uuendamist (PUT),
+pärimist (GET ID järgi, GET ajaloo järgi, GET parameetrite järgi) ja kustutamist (DELETE). Kõikides keskkondades
+on toetatud üksnes JSON formaat (<code class="language-plaintext highlighter-rouge">application/fhir+json</code>).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keskkond</th>
+      <th>Baas-URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DEV</td>
+      <td><code class="language-plaintext highlighter-rouge">https://tis.dev.tehik.ee/algy/fhir</code></td>
+    </tr>
+    <tr>
+      <td>TEST</td>
+      <td><code class="language-plaintext highlighter-rouge">https://tis.tst.tehik.ee/algy/fhir</code></td>
+    </tr>
+    <tr>
+      <td>Lokaalne</td>
+      <td><code class="language-plaintext highlighter-rouge">http://localhost:8633/algy/fhir</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="allergia-lisamine">Allergia lisamine</h3>
+
+<p>UPTIS võtab vastu allergia FHIR-ressursi (AllergyIntolerance) lisamise sõnumi. ALGY kontrollib päringu autori
+õiguseid, kontrollib FHIR-profiili kuuluvust toetatud profiilide hulka, valideerib ressursi vastava profiili järgi,
+kontrollib MedIn-ist viidatud ATC- ja toimeaine-koodide olemasolu ning kontrollib ärireegleid, sh duplikaadi
+kontrolli linkitud patsientide allergiate vastu. Edukal salvestamisel salvestatakse allergiale uus versioon
+(<code class="language-plaintext highlighter-rouge">versionNr=1</code>) ning kogu tegevus auditeeritakse.</p>
+
+<p>Allergia lisamine on lubatud:</p>
+<ul>
+  <li>patsiendile või patsiendi esindajale, kui ressurss vastab profiilile <a href="StructureDefinition-ee-tis-allergy-patient-reported.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-patient-reported</code></a> või
+<a href="StructureDefinition-ee-tis-allergy-intolerance-no-allergy.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance-no-allergy</code></a>,</li>
+  <li>raviteekonnal osalevale tervishoiutöötajale, kui ressurss vastab profiilile <a href="StructureDefinition-ee-tis-allergy-intolerance.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance</code></a> või
+<a href="StructureDefinition-ee-tis-allergy-intolerance-medication.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance-medication</code></a>.</li>
+</ul>
+
+<h4 id="päring">Päring</h4>
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">POST [base]/AllergyIntolerance</code></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/AllergyIntolerance
+{
+  "resourceType": "AllergyIntolerance",
+  "meta": {
+    "profile": ["https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-medication"]
+  },
+  "language": "et",
+  "clinicalStatus": {
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code": "active"
+    }]
+  },
+  "verificationStatus": {
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code": "confirmed"
+    }]
+  },
+  "type": {
+    "coding": [{
+      "system": "http://hl7.org/fhir/allergy-intolerance-type",
+      "code": "allergy"
+    }]
+  },
+  "category": ["medication"],
+  "criticality": "high",
+  "code": {
+    "coding": [{
+      "system": "http://snomed.info/sct",
+      "code": "91936005",
+      "display": "Allergy to penicillin"
+    }]
+  },
+  "patient": { "reference": "Patient/12345678901" },
+  "recordedDate": "2026-05-06",
+  "participant": [
+    { "actor": { "reference": "PractitionerRole/abc-123" } }
+  ],
+  "reaction": [{
+    "substance": {
+      "coding": [{
+        "system": "http://snomed.info/sct",
+        "code": "3145006",
+        "display": "Penicillic acid"
+      }]
+    },
+    "manifestation": [{
+      "concept": {
+        "coding": [{
+          "system": "http://snomed.info/sct",
+          "code": "40275004",
+          "display": "Kontaktdermatiit"
+        }]
+      }
+    }],
+    "severity": "mild",
+    "exposureRoute": {
+      "coding": [{
+        "system": "http://snomed.info/sct",
+        "code": "447694001",
+        "display": "Respiratory tract route"
+      }]
+    }
+  }]
+}
+</code></pre></div></div>
+
+<h4 id="vastus">Vastus</h4>
+<ul>
+  <li><strong>HTTP kood</strong>: 201 Created</li>
+  <li><strong>Sisu</strong>: Päringu päise parameetri <code class="language-plaintext highlighter-rouge">Prefer: return=representation</code> (vaikimisi) korral tagastatakse
+salvestatud <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code> ressurss. Päringu päise parameetri <code class="language-plaintext highlighter-rouge">Prefer: return=OperationOutcome</code> korral
+tagastatakse <code class="language-plaintext highlighter-rouge">OperationOutcome</code>, milles on:
+    <ul>
+      <li><strong>information</strong>-tasemel issue tekstiga "All OK", kui patsiendi kinnitatud ravimiskeem ei sisalda viidatud
+toimeaineid, <strong>või</strong></li>
+      <li>üks <strong>warning</strong>-tasemel issue iga konflikti kohta, koodiga <code class="language-plaintext highlighter-rouge">ALGY-018</code>, kui mõni viidatud toimeaine on
+patsiendi kinnitatud ravimiskeemis.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 201 Created
+{
+  "resourceType": "OperationOutcome",
+  "id": "1",
+  "issue": [{
+    "severity": "information",
+    "code": "informational",
+    "details": { "text": "All OK" }
+  }]
+}
+</code></pre></div></div>
+
+<h3 id="allergia-uuendamine">Allergia uuendamine</h3>
+
+<p>UPTIS võtab vastu olemasoleva <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code> muutmise sõnumi. ALGY salvestab uue versiooni
+(<code class="language-plaintext highlighter-rouge">versionNr</code> suureneb ühe võrra) ning seob selle eelmise versiooniga.</p>
+
+<p>Allergia uuendamine on lubatud autorile, kes lisas allergia (patsient või patsiendi esindaja);
+tervishoiutöötaja poolt lisatud allergiat patsient muuta ei saa. Patsiendi viite muutmine on lubatud üksnes
+juhul, kui vana ja uus patsient on MPI-s linkitud.</p>
+
+<p>Profiili järgi valideeritakse uuendus samamoodi nagu loomisel. Lisaks rakendub reegel: kui eelmise versiooni
+<code class="language-plaintext highlighter-rouge">verificationStatus</code> oli <code class="language-plaintext highlighter-rouge">entered-in-error</code> ja uuel versioonil enam ei ole, siis eemaldatakse vastav
+<code class="language-plaintext highlighter-rouge">allergy_primary</code> viit (duplikaadi link).</p>
+
+<h4 id="päring-1">Päring</h4>
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">PUT [base]/AllergyIntolerance/{id}</code></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">{id}</code> peab olema arv ning sama, mis ressursi keha <code class="language-plaintext highlighter-rouge">id</code>. Kui need ei ühti, tagastatakse veakood <code class="language-plaintext highlighter-rouge">ALGY-102</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT [base]/AllergyIntolerance/1
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "1",
+  "meta": {
+    "profile": ["https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-medication"]
+  },
+  "clinicalStatus": {
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code": "inactive"
+    }]
+  },
+  "verificationStatus": {
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code": "confirmed"
+    }]
+  },
+  "type": {
+    "coding": [{ "system": "http://hl7.org/fhir/allergy-intolerance-type", "code": "allergy" }]
+  },
+  "category": ["medication"],
+  "criticality": "low",
+  "code": {
+    "coding": [{ "system": "http://snomed.info/sct", "code": "91936005" }]
+  },
+  "patient": { "reference": "Patient/12345678901" },
+  "recordedDate": "2026-05-06",
+  "participant": [{ "actor": { "reference": "PractitionerRole/abc-123" } }]
+}
+</code></pre></div></div>
+
+<h4 id="vastus-1">Vastus</h4>
+<ul>
+  <li><strong>HTTP kood</strong>: 200 OK</li>
+  <li><strong>Sisu</strong>: vt allergia lisamise vastust. <code class="language-plaintext highlighter-rouge">meta.versionId</code> on uue versiooni järjekorranumber.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
+</code></pre></div></div>
+
+<h3 id="allergia-kustutamine">Allergia kustutamine</h3>
+
+<p>UPTIS võtab vastu allergia kustutamise sõnumi. Kustutamine on <strong>pehme kustutamine</strong> (soft delete) — tegelikud
+read andmebaasis säilivad, aga salvestatakse uus versioon, kus <code class="language-plaintext highlighter-rouge">deleted = true</code>. Edaspidi ALGY ei tagasta
+kustutatud allergiat ei lugemis- ega otsingupäringutes.</p>
+
+<p>Allergia kustutamine on lubatud üksnes patsiendile või patsiendi esindajale enda lisatud allergia kohta.
+Tervishoiutöötaja poolt lisatud või muudetud allergiat ei saa FHIR API kaudu kustutada — tagastatakse
+veakood <code class="language-plaintext highlighter-rouge">ALGY-017</code> HTTP staatusega 403.</p>
+
+<h4 id="päring-2">Päring</h4>
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">DELETE [base]/AllergyIntolerance/{id}</code></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE [base]/AllergyIntolerance/1
+</code></pre></div></div>
+
+<h4 id="vastus-2">Vastus</h4>
+<ul>
+  <li><strong>HTTP kood</strong>: 200 OK</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
+</code></pre></div></div>
+
+<p>Korduval lugemisel tagastatakse veakood <code class="language-plaintext highlighter-rouge">ALGY-016</code> HTTP staatusega 404.</p>
+
+<h3 id="allergia-pärimine">Allergia pärimine</h3>
+
+<p>UPTIS võtab vastu allergia päringu ja tagastab päringu tingimustele vastavad allergiad. Lubatud päringud ja
+nende tingimused sõltuvad päringu autorist:</p>
+
+<ul>
+  <li><strong>patsient või patsiendi esindaja</strong> võib pärida ainult enda või enda hooldatava allergiaid (otse või
+MPI-st linkitud identifikaatorite kaudu),</li>
+  <li><strong>tervishoiutöötaja</strong> (raviteekonnal osalev praktiseeriv arst, terapeut, üliõpilane, spetsialist) võib
+pärida patsiendi allergiaid; ALGY kontrollib enne tagastamist, kas patsiendi terviseloog (DL) ei ole
+NRIT-s suletud — suletud DL korral tagastatakse veakood <code class="language-plaintext highlighter-rouge">ALGY-022</code>,</li>
+  <li><strong>m2m kasutaja</strong> (CBPSIN, FIS jt) võib pärida ID või patsiendi alusel; m2m päringud auditeeritakse, kuid
+vea korral ei genereerita FAIL-audit-sündmust.</li>
+</ul>
+
+<p>Kõikides päringutes laiendatakse vastuses järgmiste koodide <code class="language-plaintext highlighter-rouge">display</code>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code.coding</code> süsteemiga <code class="language-plaintext highlighter-rouge">https://fhir.ee/CodeSystem/atc-ee</code> — täidetakse MedIn-ist (<code class="language-plaintext highlighter-rouge">nameEst</code>),</li>
+  <li><code class="language-plaintext highlighter-rouge">reaction.substance.coding</code> süsteemiga <code class="language-plaintext highlighter-rouge">https://fhir.ee/CodeSystem/toimeained</code> — täidetakse MedIn-ist
+(<code class="language-plaintext highlighter-rouge">nameEst</code>).</li>
+</ul>
+
+<h4 id="päring-id-järgi">Päring id järgi</h4>
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">GET [base]/AllergyIntolerance/{id}</code></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance/1
+</code></pre></div></div>
+
+<h4 id="vastus-3">Vastus</h4>
+<ul>
+  <li><strong>HTTP kood</strong>: 200 OK</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "resourceType": "AllergyIntolerance",
+  "id": "1",
+  "meta": {
+    "versionId": "1",
+    "profile": ["https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-medication"]
+  },
+  "clinicalStatus": {
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+      "code": "active",
+      "display": "Active"
+    }]
+  },
+  "verificationStatus": {
+    "coding": [{
+      "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+      "code": "confirmed",
+      "display": "Confirmed"
+    }]
+  },
+  "type": {
+    "coding": [{
+      "system": "http://hl7.org/fhir/allergy-intolerance-type",
+      "code": "allergy",
+      "display": "Allergy"
+    }]
+  },
+  "category": ["medication"],
+  "criticality": "high",
+  "code": {
+    "coding": [{
+      "system": "http://snomed.info/sct",
+      "code": "91936005",
+      "display": "Allergy to penicillin"
+    }]
+  },
+  "patient": { "reference": "Patient/12345678901" },
+  "recordedDate": "2026-05-06",
+  "participant": [{
+    "actor": { "reference": "PractitionerRole/abc-123" }
+  }],
+  "reaction": [{
+    "substance": {
+      "coding": [{
+        "system": "http://snomed.info/sct",
+        "code": "3145006",
+        "display": "Penicillic acid"
+      }]
+    },
+    "manifestation": [{
+      "concept": {
+        "coding": [{
+          "system": "http://snomed.info/sct",
+          "code": "40275004",
+          "display": "Kontaktdermatiit"
+        }]
+      }
+    }],
+    "severity": "mild",
+    "exposureRoute": {
+      "coding": [{
+        "system": "http://snomed.info/sct",
+        "code": "447694001",
+        "display": "Respiratory tract route"
+      }]
+    }
+  }]
+}
+</code></pre></div></div>
+
+<h4 id="ajaloo-päring">Ajaloo päring</h4>
+<ul>
+  <li><strong>URL</strong>: <code class="language-plaintext highlighter-rouge">GET [base]/AllergyIntolerance/{id}/_history/{versionId}</code></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">{versionId}</code> on 1-baasil põhinev versiooni järjekorranumber. Versiooni mitteleidmisel tagastatakse veakood
+<code class="language-plaintext highlighter-rouge">ALGY-023</code> HTTP staatusega 404.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance/1/_history/2
+</code></pre></div></div>
+
+<h4 id="vastus-4">Vastus</h4>
+<ul>
+  <li><strong>HTTP kood</strong>: 200 OK</li>
+  <li><strong>Sisu</strong>: vt päring id järgi.</li>
+</ul>
+
+<blockquote>
+  <p><strong>Märkus</strong>: tervet allergia ajalugu (<code class="language-plaintext highlighter-rouge">GET /AllergyIntolerance/{id}/_history</code>) hetkel ALGY ei toeta —
+implementatsioon on planeeritud (ALGY-Q-1).</p>
+</blockquote>
+
+<h4 id="päring-parameetritega">Päring parameetritega</h4>
+
+<p>Otsing tagastab <code class="language-plaintext highlighter-rouge">Bundle</code> tüüpi <code class="language-plaintext highlighter-rouge">searchset</code> ressursi, milles on patsiendile (ja MPI-s linkitud
+patsientidele) kuuluvate kustutamata allergiate viimased versioonid.</p>
+
+<h5 id="kohustuslikud-tingimused">Kohustuslikud tingimused</h5>
+
+<p>Päringus peab olema <strong>kas</strong> <code class="language-plaintext highlighter-rouge">patient</code> (või <code class="language-plaintext highlighter-rouge">patient.identifier</code>) <strong>või</strong> <code class="language-plaintext highlighter-rouge">_id</code>. Kui kumbki puudub,
+tagastatakse veakood <code class="language-plaintext highlighter-rouge">ALGY-019</code>.</p>
+
+<h5 id="patient">patient</h5>
+
+<p>Patsiendi MPI-id või FHIR-viide.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patient=12345678901
+
+patient=Patient/12345678901
+</code></pre></div></div>
+
+<p>ALGY laiendab automaatselt päringu kõikidele patsiendi MPI-s linkitud identifikaatoritele
+(<code class="language-plaintext highlighter-rouge">UC-PAT-034</code>).</p>
+
+<h5 id="patientidentifier">patient.identifier</h5>
+
+<p>Alternatiivne kuju: süsteemi ja väärtuse paar. Kui süsteem on välja jäetud ja väärtus on 11-kohaline arv,
+siis ALGY käsitleb seda Eesti isikukoodina ja kasutab süsteemi <code class="language-plaintext highlighter-rouge">MpiService.MPI_SYSTEM_IDCODE_EE</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>patient.identifier=https://fhir.ee/sid/pid/est/ni|39702232035
+
+patient.identifier=urn:oid:1.3.6.1.4.1.28284.6.2.2.1|39702232035
+
+patient.identifier=39702232035
+</code></pre></div></div>
+
+<h5 id="_id">_id</h5>
+
+<p>Konkreetne allergia ID (arv). <code class="language-plaintext highlighter-rouge">_id</code> ja <code class="language-plaintext highlighter-rouge">patient</code> võivad olla koos — sel juhul kontrollitakse
+mõlemat tingimust.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_id=1
+</code></pre></div></div>
+
+<p>Kui <code class="language-plaintext highlighter-rouge">_id</code> järgi ei leita allergiat, tagastatakse veakood <code class="language-plaintext highlighter-rouge">ALGY-016</code> (HTTP 404).</p>
+
+<h5 id="type">type</h5>
+
+<p>Allergia tüüp.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">allergy</code>, <code class="language-plaintext highlighter-rouge">intolerance</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type=allergy
+</code></pre></div></div>
+
+<h5 id="category">category</h5>
+
+<p>Allergia kategooria.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">food</code>, <code class="language-plaintext highlighter-rouge">medication</code>, <code class="language-plaintext highlighter-rouge">environment</code>, <code class="language-plaintext highlighter-rouge">biologic</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>category=medication
+</code></pre></div></div>
+
+<h5 id="code">code</h5>
+
+<p>Allergeeni kood. Token formaadis <code class="language-plaintext highlighter-rouge">system|code</code>. Mõlemad pooled peavad olema kas täidetud või mõlemad
+puudu (lihtkoodi väärtus on lubatud), vastasel juhul tagastatakse veakood <code class="language-plaintext highlighter-rouge">ALGY-019</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code=http://snomed.info/sct|91936005
+</code></pre></div></div>
+
+<h5 id="criticality">criticality</h5>
+
+<p>Allergia kriitilisus.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">low</code>, <code class="language-plaintext highlighter-rouge">high</code>, <code class="language-plaintext highlighter-rouge">unable-to-assess</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>criticality=high
+</code></pre></div></div>
+
+<h5 id="severity">severity</h5>
+
+<p>Reaktsiooni raskusaste.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">mild</code>, <code class="language-plaintext highlighter-rouge">moderate</code>, <code class="language-plaintext highlighter-rouge">severe</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>severity=moderate
+</code></pre></div></div>
+
+<h5 id="clinical-status">clinical-status</h5>
+
+<p>Allergia kliiniline staatus.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">active</code>, <code class="language-plaintext highlighter-rouge">inactive</code>, <code class="language-plaintext highlighter-rouge">resolved</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clinical-status=active
+</code></pre></div></div>
+
+<h5 id="verification-status-verification-statusnot">verification-status, verification-status:not</h5>
+
+<p>Allergia kinnitusstaatus. Erinevalt teistest parameetritest võib <code class="language-plaintext highlighter-rouge">verification-status</code> ja <code class="language-plaintext highlighter-rouge">verification-status:not</code>
+sisaldada mitut komaeraldatud koodi.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">unconfirmed</code>, <code class="language-plaintext highlighter-rouge">presumed</code>, <code class="language-plaintext highlighter-rouge">confirmed</code>, <code class="language-plaintext highlighter-rouge">refuted</code>, <code class="language-plaintext highlighter-rouge">entered-in-error</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">verification-status</code> (või <code class="language-plaintext highlighter-rouge">:not</code>) lisamisel piiritleb ALGY otsingu automaatselt tervishoiutöötaja
+sisestatud allergiatele (<code class="language-plaintext highlighter-rouge">author-type=PractitionerRole</code>).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>verification-status=confirmed,presumed
+
+verification-status:not=entered-in-error,refuted
+</code></pre></div></div>
+
+<h5 id="author-type">author-type</h5>
+
+<p>Allergia autori tüüp — eristab patsiendi/esindaja sisestatud ja tervishoiutöötaja sisestatud allergiaid.
+Custom EE otsinguparameeter, kanooniline URL
+<code class="language-plaintext highlighter-rouge">https://fhir.ee/allergy/SearchParameter/ee-tis-allergy-author-type</code>.</p>
+
+<p>Lubatud väärtused: <code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>author-type=PractitionerRole
+</code></pre></div></div>
+
+<h5 id="kontrollparameetrid">Kontrollparameetrid</h5>
+
+<p><code class="language-plaintext highlighter-rouge">_count</code>, <code class="language-plaintext highlighter-rouge">_id</code>, <code class="language-plaintext highlighter-rouge">_profile</code>, <code class="language-plaintext highlighter-rouge">_summary</code>, <code class="language-plaintext highlighter-rouge">_sort</code>, <code class="language-plaintext highlighter-rouge">_total</code> — antakse FHIRest-ile edasi muutmata kujul.</p>
+
+<h5 id="keelatud-parameetrid">Keelatud parameetrid</h5>
+
+<p>Kõik muud parameetrid tagastavad veakoodi <code class="language-plaintext highlighter-rouge">ALGY-020</code>. Mitme väärtuse esitamine ühevalisel parameetril
+(välja arvatud <code class="language-plaintext highlighter-rouge">verification-status</code>) tagastab veakoodi <code class="language-plaintext highlighter-rouge">ALGY-021</code>.</p>
+
+<h4 id="otsingu-näited">Otsingu näited</h4>
+
+<h5 id="patsient-või-patsiendi-esindaja-pärib-oma-allergiad">Patsient või patsiendi esindaja pärib oma allergiad</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /AllergyIntolerance?patient={id}&amp;{parameter1=value1}&amp;...
+</code></pre></div></div>
+
+<h5 id="näidispäring">Näidispäring</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance?patient.identifier=https://fhir.ee/sid/pid/est/ni%7C39702232035
+</code></pre></div></div>
+
+<h5 id="vastus-5">Vastus</h5>
+<ul>
+  <li><strong>HTTP kood</strong>: 200 OK</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "fullUrl": "AllergyIntolerance/1",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "1",
+        "meta": {
+          "versionId": "1",
+          "profile": ["https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-intolerance-medication"]
+        },
+        "clinicalStatus": {
+          "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+            "code": "active"
+          }]
+        },
+        "verificationStatus": {
+          "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+            "code": "confirmed"
+          }]
+        },
+        "category": ["medication"],
+        "criticality": "high",
+        "code": {
+          "coding": [{
+            "system": "http://snomed.info/sct",
+            "code": "91936005",
+            "display": "Allergy to penicillin"
+          }]
+        },
+        "patient": { "reference": "Patient/12345678901" },
+        "recordedDate": "2026-05-06"
+      }
+    }
+  ]
+}
+</code></pre></div></div>
+
+<h5 id="tervishoiutöötaja-pärib-patsiendi-allergiad-konkreetses-kategoorias">Tervishoiutöötaja pärib patsiendi allergiad konkreetses kategoorias</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /AllergyIntolerance?patient={id}&amp;category={cat}&amp;clinical-status=active&amp;{parameter1=value1}&amp;...
+</code></pre></div></div>
+
+<h5 id="näidispäring-1">Näidispäring</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance?patient=Patient/12345678901&amp;category=medication&amp;clinical-status=active
+</code></pre></div></div>
+
+<h5 id="vastus-6">Vastus</h5>
+<ul>
+  <li><strong>HTTP kood</strong>: 200 OK</li>
+</ul>
+
+<p>Tagastatakse <code class="language-plaintext highlighter-rouge">Bundle</code> patsiendile kuuluvate aktiivsete ravimi-allergiatega (sh MPI-s linkitud
+patsientide allergiatega).</p>
+
+<h5 id="otsing-kinnitusstaatuse-järgi-välistab-vigased-kirjed">Otsing kinnitusstaatuse järgi (välistab vigased kirjed)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance?patient=Patient/12345678901&amp;verification-status:not=entered-in-error,refuted
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">verification-status:not</code> lisamisel piiritleb ALGY otsingu automaatselt
+<code class="language-plaintext highlighter-rouge">author-type=PractitionerRole</code>.</p>
+
+<h5 id="tervishoiutöötaja-pärib-allergia-konkreetse-id-alusel">Tervishoiutöötaja pärib allergia konkreetse ID alusel</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/AllergyIntolerance?_id=1
+</code></pre></div></div>
+
+<p>ID-järgse otsingu korral ei laiendata päringut MPI-s linkitud patsientidele (UC-PAT-034 vahele jäetakse).
+Kui allergia ei ole leitav, tagastatakse <code class="language-plaintext highlighter-rouge">ALGY-016</code> (HTTP 404).</p>
+
+<h3 id="capabilitystatement">CapabilityStatement</h3>
+
+<p>ALGY teenuse <code class="language-plaintext highlighter-rouge">CapabilityStatement</code> on tagastatav järgmiselt:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/metadata
+</code></pre></div></div>
+
+<p>Vastusena tagastatakse FHIR R5 <code class="language-plaintext highlighter-rouge">CapabilityStatement</code> ressurss, milles loetletakse toetatud ressursid
+(<code class="language-plaintext highlighter-rouge">AllergyIntolerance</code>, <code class="language-plaintext highlighter-rouge">Patient</code>), interaktsioonid ja otsinguparameetrid. Päring on autentimata.</p>
+
+<h3 id="profiilid">Profiilid</h3>
+
+<p>ALGY publitseerib käesoleva Implementation Guide'i raames järgmised Eesti FHIR profiilid:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profiil</th>
+      <th>Ressurss</th>
+      <th>Kasutus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-intolerance.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+      <td>Tervishoiutöötaja registreeritud üldine allergia/talumatus</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-intolerance-medication.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance-medication</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+      <td>Ravimiallergia (<code class="language-plaintext highlighter-rouge">code</code> viitab ATC-EE koodile)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-patient-reported.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-patient-reported</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+      <td>Patsiendi või esindaja sisestatud allergia</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-intolerance-no-allergy.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance-no-allergy</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+      <td>"Allergiad puuduvad" kinnitus (SNOMED 716186003)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-condition.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-condition</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td>Allergia diagnoosi seisund; viidatud <code class="language-plaintext highlighter-rouge">ee-tis-allergy-diagnosis</code> laienduselt</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">AllergyIntolerance.meta.profile</code> peab sisaldama täpselt üht ülaltoodud <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code>-tüüpi profiilist
+(4 võimalust). Profiil <code class="language-plaintext highlighter-rouge">ee-tis-allergy-condition</code> rakendub <code class="language-plaintext highlighter-rouge">Condition</code>-ressursile, millele viidatakse
+<code class="language-plaintext highlighter-rouge">ee-tis-allergy-diagnosis</code> laienduse <code class="language-plaintext highlighter-rouge">value[x]</code> kaudu — <code class="language-plaintext highlighter-rouge">AllergyIntolerance.meta.profile</code>-s seda ei kasutata.</p>
+
+<p>ALGY rakendus tagastab veateate <code class="language-plaintext highlighter-rouge">ALGY-005</code> "FHIR profile '${profile}' is not supported" juhul, kui
+<code class="language-plaintext highlighter-rouge">AllergyIntolerance.meta.profile</code> URL ei kuulu nelja toetatud profiili hulka, ning veateate <code class="language-plaintext highlighter-rouge">ALGY-004</code>,
+kui <code class="language-plaintext highlighter-rouge">meta.profile</code> on puudu. Lubatud on üksnes üks profiil <code class="language-plaintext highlighter-rouge">meta.profile</code> listis (<code class="language-plaintext highlighter-rouge">ALGY-101</code>).</p>
+
+<h3 id="laiendused">Laiendused</h3>
+
+<p>ALGY publitseerib käesoleva Implementation Guide'i raames järgmised laiendused (Extension):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Laiendus</th>
+      <th>Kontekst</th>
+      <th>Kasutus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-diagnosis.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-diagnosis</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+      <td>Viide allergia/talumatusega seotud diagnoosile (<code class="language-plaintext highlighter-rouge">Reference(Condition)</code>)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ee-tis-allergy-reaction-grouper.html"><code class="language-plaintext highlighter-rouge">ee-tis-allergy-reaction-grouper</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance.reaction</code></td>
+      <td>Grupeerib sama reaktsiooniga toimeained ühte loogilisse reaktsiooni (<code class="language-plaintext highlighter-rouge">group_id</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ärireeglid">Ärireeglid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reegel</th>
+      <th>Veakood</th>
+      <th>Selgitus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Profiil on määratud</td>
+      <td>ALGY-004 / ALGY-101</td>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code> peab sisaldama täpselt üht toetatud profiili</td>
+    </tr>
+    <tr>
+      <td>Profiil on toetatud</td>
+      <td>ALGY-005</td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance.meta.profile</code> URL peab olema üks neljast <a href="#profiilid">profiilid</a>-tabelis loetletud <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code>-tüüpi profiilist</td>
+    </tr>
+    <tr>
+      <td>ID on arv</td>
+      <td>ALGY-102</td>
+      <td><code class="language-plaintext highlighter-rouge">id</code> ja URL-i <code class="language-plaintext highlighter-rouge">{id}</code> peavad olema arvud</td>
+    </tr>
+    <tr>
+      <td>Toimeaine kood eksisteerib MedIn-is</td>
+      <td>ALGY-006, ALGY-103</td>
+      <td><code class="language-plaintext highlighter-rouge">reaction.substance</code> koodid süsteemiga <code class="language-plaintext highlighter-rouge">https://fhir.ee/CodeSystem/toimeained</code></td>
+    </tr>
+    <tr>
+      <td>ATC kood eksisteerib MedIn-is</td>
+      <td>ALGY-030</td>
+      <td><code class="language-plaintext highlighter-rouge">code.coding</code> süsteemiga <code class="language-plaintext highlighter-rouge">https://fhir.ee/CodeSystem/atc-ee</code></td>
+    </tr>
+    <tr>
+      <td>Staatuste kombinatsioon on lubatud</td>
+      <td>ALGY-007</td>
+      <td>Keelatud paarid: <code class="language-plaintext highlighter-rouge">active+entered-in-error</code>, <code class="language-plaintext highlighter-rouge">active+refuted</code>, <code class="language-plaintext highlighter-rouge">resolved+entered-in-error</code>, <code class="language-plaintext highlighter-rouge">resolved+refuted</code></td>
+    </tr>
+    <tr>
+      <td>Lõpukuupäev ≥ registreerimiskuupäev</td>
+      <td>ALGY-029</td>
+      <td><code class="language-plaintext highlighter-rouge">onsetPeriod.end &gt;= recordedDate</code></td>
+    </tr>
+    <tr>
+      <td>Reaktsiooni alguskuupäev ≤ allergia lõpukuupäev</td>
+      <td>ALGY-008</td>
+      <td><code class="language-plaintext highlighter-rouge">reaction.onset &lt;= onsetPeriod.end</code></td>
+    </tr>
+    <tr>
+      <td>Kuupäevad ≥ patsiendi sünnikuupäev</td>
+      <td>ALGY-009, ALGY-010</td>
+      <td><code class="language-plaintext highlighter-rouge">reaction.onset</code> ja <code class="language-plaintext highlighter-rouge">onsetPeriod.end</code> ei tohi olla varasemad sünnikuupäevast</td>
+    </tr>
+    <tr>
+      <td>Toimeaine ainult ravimiallergial</td>
+      <td>ALGY-011</td>
+      <td><code class="language-plaintext highlighter-rouge">reaction.substance</code> on lubatud üksnes profiilil <code class="language-plaintext highlighter-rouge">ee-tis-allergy-intolerance-medication</code></td>
+    </tr>
+    <tr>
+      <td>Lõpukuupäev ainult inactive/resolved allergial</td>
+      <td>ALGY-012</td>
+      <td><code class="language-plaintext highlighter-rouge">onsetPeriod.end</code> lubatud üksnes <code class="language-plaintext highlighter-rouge">clinicalStatus</code> <code class="language-plaintext highlighter-rouge">inactive</code> või <code class="language-plaintext highlighter-rouge">resolved</code> korral</td>
+    </tr>
+    <tr>
+      <td>Kood vastab kategooriale</td>
+      <td>ALGY-013, ALGY-031</td>
+      <td>Kontrollitakse Terminoloogiaserveri vastendusest</td>
+    </tr>
+    <tr>
+      <td>Allergeen on lubatud ValueSet-is</td>
+      <td>ALGY-032</td>
+      <td>Kood peab olema <code class="language-plaintext highlighter-rouge">https://fhir.ee/ValueSet/allergia-allergeenid</code> hulgas</td>
+    </tr>
+    <tr>
+      <td>Patsiendi duplikaat ei ole lubatud</td>
+      <td>ALGY-014</td>
+      <td>Sama allergeen, sama autoritüüp, linkitud patsientide allergiate vastu</td>
+    </tr>
+    <tr>
+      <td>"Allergiad puuduvad" verificationStatus</td>
+      <td>ALGY-026</td>
+      <td>Lubatud <code class="language-plaintext highlighter-rouge">presumed</code> või <code class="language-plaintext highlighter-rouge">entered-in-error</code></td>
+    </tr>
+    <tr>
+      <td>"Allergiad puuduvad" clinicalStatus</td>
+      <td>ALGY-027</td>
+      <td>Lubatud <code class="language-plaintext highlighter-rouge">active</code> või <code class="language-plaintext highlighter-rouge">inactive</code></td>
+    </tr>
+    <tr>
+      <td>"Allergiad puuduvad" + aktiivne allergia</td>
+      <td>ALGY-024, ALGY-025</td>
+      <td>"Allergiad puuduvad" ja aktiivne allergia ei tohi koos eksisteerida</td>
+    </tr>
+    <tr>
+      <td>Õiguste kontroll</td>
+      <td>ALGY-100, ALGY-017</td>
+      <td>Patsient ainult enda ressurssidel; tervishoiutöötaja vastavalt SPD <code class="language-plaintext highlighter-rouge">PractitionerRole</code> ja Themis lubadele</td>
+    </tr>
+    <tr>
+      <td>Patsiendi terviseloog (DL) on avatud</td>
+      <td>ALGY-022</td>
+      <td>Tervishoiutöötaja rollidel kontrollitakse NRIT-st</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="veakoodid">Veakoodid</h3>
+
+<p>ALGY veakoodid on kujul <code class="language-plaintext highlighter-rouge">ALGY-NNN[.NN]</code> ja edastatakse <code class="language-plaintext highlighter-rouge">OperationOutcome.issue.details.coding[system=https://algy.tehik.ee/issue].code</code>.
+Täismahus tabel:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Kood</th>
+      <th>HTTP</th>
+      <th>Tase</th>
+      <th>Sõnum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALGY-001</td>
+      <td>500</td>
+      <td>error</td>
+      <td>ALGY internal server error: <code class="language-plaintext highlighter-rouge">${message}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-002</td>
+      <td>500</td>
+      <td>error</td>
+      <td>An error occurred during the processing of the allergy data, please contact a system administrator.</td>
+    </tr>
+    <tr>
+      <td>ALGY-003[.NN]</td>
+      <td>500</td>
+      <td>error</td>
+      <td>Outbound client request failure (MedIn FHIR/REST).</td>
+    </tr>
+    <tr>
+      <td>ALGY-004</td>
+      <td>400</td>
+      <td>error</td>
+      <td>FHIR profile is missing.</td>
+    </tr>
+    <tr>
+      <td>ALGY-005</td>
+      <td>400</td>
+      <td>error</td>
+      <td>FHIR profile <code class="language-plaintext highlighter-rouge">${profile}</code> is not supported.</td>
+    </tr>
+    <tr>
+      <td>ALGY-006</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Substance code <code class="language-plaintext highlighter-rouge">${substance}</code> not found from substance valueSet.</td>
+    </tr>
+    <tr>
+      <td>ALGY-007</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy status <code class="language-plaintext highlighter-rouge">${verificationStatus}</code> not allowed with clinical status <code class="language-plaintext highlighter-rouge">${clinicalStatus}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-008</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy reaction onset date cannot be later than end date of the allergy.</td>
+    </tr>
+    <tr>
+      <td>ALGY-009</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy reaction onset date must not be earlier than the person's date of birth.</td>
+    </tr>
+    <tr>
+      <td>ALGY-010</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy end date must not be earlier than the person's date of birth.</td>
+    </tr>
+    <tr>
+      <td>ALGY-011</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Substance can be specified only for the medication allergy.</td>
+    </tr>
+    <tr>
+      <td>ALGY-012</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy end date can be specified only for inactive or resolved allergy.</td>
+    </tr>
+    <tr>
+      <td>ALGY-013</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy code <code class="language-plaintext highlighter-rouge">${code}</code> not allowed with category <code class="language-plaintext highlighter-rouge">${category}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-014</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Patient already has allergyIntolerance <code class="language-plaintext highlighter-rouge">${id}</code> with allergy code <code class="language-plaintext highlighter-rouge">${code}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-015</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Encounter <code class="language-plaintext highlighter-rouge">${encounterId}</code> not found.</td>
+    </tr>
+    <tr>
+      <td>ALGY-016</td>
+      <td>404</td>
+      <td>error</td>
+      <td>AllergyIntolerance <code class="language-plaintext highlighter-rouge">${id}</code> not found.</td>
+    </tr>
+    <tr>
+      <td>ALGY-017</td>
+      <td>403</td>
+      <td>error</td>
+      <td>No permission to change or delete the allergy.</td>
+    </tr>
+    <tr>
+      <td>ALGY-018</td>
+      <td>200</td>
+      <td>warning</td>
+      <td>Patient's confirmed medication list includes medication with the active substance <code class="language-plaintext highlighter-rouge">${substance}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-019</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Missing mandatory <code class="language-plaintext highlighter-rouge">${param}</code> parameter value.</td>
+    </tr>
+    <tr>
+      <td>ALGY-020</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Forbidden <code class="language-plaintext highlighter-rouge">${param}</code> parameter.</td>
+    </tr>
+    <tr>
+      <td>ALGY-021</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Search parameter <code class="language-plaintext highlighter-rouge">${param}</code> allows only one value.</td>
+    </tr>
+    <tr>
+      <td>ALGY-022</td>
+      <td>403</td>
+      <td>error</td>
+      <td>Patient's medical history is closed.</td>
+    </tr>
+    <tr>
+      <td>ALGY-023</td>
+      <td>404</td>
+      <td>error</td>
+      <td>No history record <code class="language-plaintext highlighter-rouge">${version}</code> found for the allergy <code class="language-plaintext highlighter-rouge">${id}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-024</td>
+      <td>400</td>
+      <td>error</td>
+      <td>"No known allergy" is not allowed when active allergy exists.</td>
+    </tr>
+    <tr>
+      <td>ALGY-025</td>
+      <td>400</td>
+      <td>error</td>
+      <td>"No known allergy" status must be inactivated before active allergy can be added.</td>
+    </tr>
+    <tr>
+      <td>ALGY-026</td>
+      <td>400</td>
+      <td>error</td>
+      <td>"No known allergy" verification status must be either "presumed" or "entered-in-error".</td>
+    </tr>
+    <tr>
+      <td>ALGY-027</td>
+      <td>400</td>
+      <td>error</td>
+      <td>"No known allergy" clinical status must be either "active" or "inactive".</td>
+    </tr>
+    <tr>
+      <td>ALGY-029</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy end date cannot be earlier than registration date of the allergy.</td>
+    </tr>
+    <tr>
+      <td>ALGY-030</td>
+      <td>400</td>
+      <td>error</td>
+      <td>ATC code <code class="language-plaintext highlighter-rouge">${code}</code> not found.</td>
+    </tr>
+    <tr>
+      <td>ALGY-031</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Category <code class="language-plaintext highlighter-rouge">${category}</code> is not allowed for profile <code class="language-plaintext highlighter-rouge">${profile}</code>.</td>
+    </tr>
+    <tr>
+      <td>ALGY-032</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy code <code class="language-plaintext highlighter-rouge">${code}</code> is not in the allergen ValueSet.</td>
+    </tr>
+    <tr>
+      <td>ALGY-100</td>
+      <td>403</td>
+      <td>error</td>
+      <td>Unauthorized request.</td>
+    </tr>
+    <tr>
+      <td>ALGY-101</td>
+      <td>400</td>
+      <td>error</td>
+      <td>One FHIR profile allowed.</td>
+    </tr>
+    <tr>
+      <td>ALGY-102</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Allergy resource id must be number.</td>
+    </tr>
+    <tr>
+      <td>ALGY-103</td>
+      <td>400</td>
+      <td>error</td>
+      <td>Substance code must be number.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.tehik.ee">TEHIK</a>.  Package ig-ee-allergy#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, May 13, 2026 11:26+0000">2026-05-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

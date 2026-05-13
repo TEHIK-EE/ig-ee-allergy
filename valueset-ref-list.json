@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "sources" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-tis-allergy-condition.html" : "EE TIS Condition"
+  }]
+}
