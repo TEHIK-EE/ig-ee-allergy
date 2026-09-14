@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="example"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance example</b></p><a name="example"> </a><a name="hcexample"> </a><p><b>Allergy probability</b>: <span title="Codes:{https://fhir.ee/CodeSystem/valu-esinemise-sagedus 02}">Esines 1-2 päeva vältel viimase 3 päeva jooksul</span></p><p><b>code</b>: <span title="Codes:">allergeen</span></p><p><b>patient</b>: <code>Patient/$ee-mpi-patient</code></p></div>
+  </text>
+  <extension url="https://fhir.ee/allergy/StructureDefinition/ee-tis-allergy-probability">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/valu-esinemise-sagedus"/>
+        <code value="02"/>
+        <display value="Esines 1-2 päeva vältel viimase 3 päeva jooksul"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <code>
+    <text value="allergeen"/>
+  </code>
+  <patient>
+    <reference value="Patient/$ee-mpi-patient"/>
+  </patient>
+</AllergyIntolerance>

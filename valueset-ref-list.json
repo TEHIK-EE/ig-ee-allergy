@@ -1,0 +1,62 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+    "oids" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "sources" : ["2.16.840.1.113883.4.642.3.155",
+    "2.16.840.1.113883.4.642.3.164",
+    "2.16.840.1.113883.4.642.2.74"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-tis-allergy-condition.html" : "EE TIS Condition"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/allergia-allergeenid",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Allergia allergeenid",
+    "description" : "",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-tis-allergy-intolerance.html" : "EE TIS AllergyIntolerance",
+    "StructureDefinition-ee-tis-allergy-intolerance-no-allergy.html" : "EE TIS AllergyIntoleranceNoAllergy",
+    "StructureDefinition-ee-tis-allergy-patient-reported.html" : "EE TIS AllergyIntolerance Patient Reported"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Allergia kokkupuude-manustamisviis",
+    "description" : "Allergia teenuse ravimi manustamisviiside loend",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-tis-allergy-intolerance.html" : "EE TIS AllergyIntolerance",
+    "StructureDefinition-ee-tis-allergy-intolerance-medication.html" : "EE TIS AllergyIntolerance Medication",
+    "StructureDefinition-ee-tis-allergy-patient-reported.html" : "EE TIS AllergyIntolerance Patient Reported"
+  },
+  {
+    "url" : "https://fhir.ee/ValueSet/allergia-reaktsiooni-avaldumine",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Allergia reaktsiooni avaldumine",
+    "description" : "Allergia reaktsiooni avaldumise sümptomite nimekiri, mida kasutada Allergia teenuse reaction.manifestation elemendis.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ee-tis-allergy-intolerance.html" : "EE TIS AllergyIntolerance",
+    "StructureDefinition-ee-tis-allergy-intolerance-medication.html" : "EE TIS AllergyIntolerance Medication",
+    "StructureDefinition-ee-tis-allergy-patient-reported.html" : "EE TIS AllergyIntolerance Patient Reported"
+  }]
+}

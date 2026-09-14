@@ -1,0 +1,295 @@
+EETISIGAllergy : Validation Results
+=========================================
+
+err = 40, warn = 187, info = 23
+$--
+Generated $--. FHIR version $-- for ig-ee-allergy#$-- (canonical = https://fhir.ee/allergy)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyBiologic : 6 / 6 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyEnvironment : 6 / 6 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyFood : 6 / 6 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyMedication : 4 / 12 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyMedicationFourSubstances : 5 / 16 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyPatientReportedDrug : 5 / 2 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-AllergyPatientReportedFood : 5 / 2 / 1
+ /github/workspace/fsh-generated/resources/AllergyIntolerance-noAllergy : 2 / 3 / 1
+ /github/workspace/fsh-generated/resources/Condition-AllergyCondition1 : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-ig-ee-allergy : 0 / 2 / 17
+ /github/workspace/fsh-generated/resources/Patient-patientExampleMPI : 1 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-condition : 0 / 7 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-diagnosis : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance : 0 / 38 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance-medication : 0 / 42 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance-no-allergy : 0 / 17 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-patient-reported : 0 / 15 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-ee-tis-allergy-reaction-grouper : 0 / 2 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AllergyIntolerance-AllergyBiologic.json ==
+WARNING: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.verificationStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus' not found
+WARNING: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.type: ValueSet 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp' not found
+ERROR: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.type.coding[0].display: Wrong Display Name 'Allergia' for http://hl7.org/fhir/allergy-intolerance-type#allergy. Valid display is 'Allergy' (for the language(s) 'et')
+WARNING: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+WARNING: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.criticality: ValueSet 'https://fhir.ee/ValueSet/allergia-kriitilisus' not found
+ERROR: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'Bee venom' for http://snomed.info/sct#288328004. Valid display is 'Mesilase mürk' (et) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.code: None of the codings provided are in the value set 'Allergia allergeenid' (https://fhir.ee/ValueSet/allergia-allergeenid|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#288328004)
+ERROR: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+WARNING: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.reaction[0].severity: ValueSet 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste' not found
+ERROR: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Topical route' for http://snomed.info/sct#6064005. Valid display is 'Paikne manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyBiologic: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#6064005)
+== fsh-generated/resources/AllergyIntolerance-AllergyEnvironment.json ==
+WARNING: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.verificationStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus' not found
+WARNING: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.type: ValueSet 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp' not found
+ERROR: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.type.coding[0].display: Wrong Display Name 'Allergia' for http://hl7.org/fhir/allergy-intolerance-type#allergy. Valid display is 'Allergy' (for the language(s) 'et')
+WARNING: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+WARNING: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.criticality: ValueSet 'https://fhir.ee/ValueSet/allergia-kriitilisus' not found
+ERROR: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'Latex' for http://snomed.info/sct#111088007. Valid display is 'Lateks' (et) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.code: None of the codings provided are in the value set 'Allergia allergeenid' (https://fhir.ee/ValueSet/allergia-allergeenid|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#111088007)
+ERROR: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+WARNING: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.reaction[0].severity: ValueSet 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste' not found
+ERROR: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Respiratory tract route' for http://snomed.info/sct#447694001. Valid display is 'Inhalatsioon, manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyEnvironment: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#447694001)
+== fsh-generated/resources/AllergyIntolerance-AllergyFood.json ==
+WARNING: AllergyIntolerance/AllergyFood: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyFood: AllergyIntolerance.verificationStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus' not found
+WARNING: AllergyIntolerance/AllergyFood: AllergyIntolerance.type: ValueSet 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp' not found
+ERROR: AllergyIntolerance/AllergyFood: AllergyIntolerance.type.coding[0].display: Wrong Display Name 'Allergia' for http://hl7.org/fhir/allergy-intolerance-type#allergy. Valid display is 'Allergy' (for the language(s) 'et')
+WARNING: AllergyIntolerance/AllergyFood: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+WARNING: AllergyIntolerance/AllergyFood: AllergyIntolerance.criticality: ValueSet 'https://fhir.ee/ValueSet/allergia-kriitilisus' not found
+ERROR: AllergyIntolerance/AllergyFood: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'Apple' for http://snomed.info/sct#735215001. Valid display is 'Õun' (et) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyFood: AllergyIntolerance.code: None of the codings provided are in the value set 'Allergia allergeenid' (https://fhir.ee/ValueSet/allergia-allergeenid|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#735215001)
+ERROR: AllergyIntolerance/AllergyFood: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+WARNING: AllergyIntolerance/AllergyFood: AllergyIntolerance.reaction[0].severity: ValueSet 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste' not found
+ERROR: AllergyIntolerance/AllergyFood: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Cutaneous route' for http://snomed.info/sct#448598008. Valid display is 'Kutaanne manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyFood: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#448598008)
+== fsh-generated/resources/AllergyIntolerance-AllergyMedication.json ==
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.verificationStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus' not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.type: ValueSet 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp' not found
+ERROR: AllergyIntolerance/AllergyMedication: AllergyIntolerance.type.coding[0].display: Wrong Display Name 'Allergia' for http://hl7.org/fhir/allergy-intolerance-type#allergy. Valid display is 'Allergy' (for the language(s) 'et')
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.criticality: ValueSet 'https://fhir.ee/ValueSet/allergia-kriitilisus' not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.code: ValueSet 'https://fhir.ee/ValueSet/atc-ee' not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.code: Unable to check whether the code is in the value set '' because the code system https://fhir.ee/CodeSystem/atc-ee was not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.code.coding[0].system: A definition for CodeSystem 'https://fhir.ee/CodeSystem/atc-ee' could not be found, so the code cannot be validated
+ERROR: AllergyIntolerance/AllergyMedication: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.reaction[0].substance: ValueSet 'https://fhir.ee/ValueSet/toimeained' not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.reaction[0].substance: Unable to check whether the code is in the value set '' because the code system https://fhir.ee/CodeSystem/toimeained was not found
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.reaction[0].substance.coding[0].system: A definition for CodeSystem 'https://fhir.ee/CodeSystem/toimeained' could not be found, so the code cannot be validated
+WARNING: AllergyIntolerance/AllergyMedication: AllergyIntolerance.reaction[0].severity: ValueSet 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste' not found
+ERROR: AllergyIntolerance/AllergyMedication: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Respiratory tract route' for http://snomed.info/sct#447694001. Valid display is 'Inhalatsioon, manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyMedication: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#447694001)
+== fsh-generated/resources/AllergyIntolerance-AllergyMedicationFourSubstances.json ==
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.verificationStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.type: ValueSet 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp' not found
+ERROR: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.type.coding[0].display: Wrong Display Name 'Allergia' for http://hl7.org/fhir/allergy-intolerance-type#allergy. Valid display is 'Allergy' (for the language(s) 'et')
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.criticality: ValueSet 'https://fhir.ee/ValueSet/allergia-kriitilisus' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.code: ValueSet 'https://fhir.ee/ValueSet/atc-ee' not found
+ERROR: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.code.coding[0].system: CodeSystem https://fhir.ee/CodeSystem/allergia-allergeenid is a supplement, so can't be used as a value in Coding.system
+ERROR: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[0].substance: ValueSet 'https://fhir.ee/ValueSet/toimeained' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[0].substance: Unable to check whether the code is in the value set '' because the code system https://fhir.ee/CodeSystem/toimeained was not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[0].substance.coding[0].system: A definition for CodeSystem 'https://fhir.ee/CodeSystem/toimeained' could not be found, so the code cannot be validated
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[0].severity: ValueSet 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste' not found
+ERROR: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Respiratory tract route' for http://snomed.info/sct#447694001. Valid display is 'Inhalatsioon, manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#447694001)
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[1].substance: ValueSet 'https://fhir.ee/ValueSet/toimeained' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[1].substance.coding[0]: A definition for CodeSystem 'https://fhir.ee/CodeSystem/toimeained' could not be found, so the code cannot be validated
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[2].substance: ValueSet 'https://fhir.ee/ValueSet/toimeained' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[2].substance.coding[0]: A definition for CodeSystem 'https://fhir.ee/CodeSystem/toimeained' could not be found, so the code cannot be validated
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[3].substance: ValueSet 'https://fhir.ee/ValueSet/toimeained' not found
+WARNING: AllergyIntolerance/AllergyMedicationFourSubstances: AllergyIntolerance.reaction[3].substance.coding[0]: A definition for CodeSystem 'https://fhir.ee/CodeSystem/toimeained' could not be found, so the code cannot be validated
+== fsh-generated/resources/AllergyIntolerance-AllergyPatientReportedDrug.json ==
+WARNING: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+ERROR: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'Non-steroidal anti-inflammatory agenty' for http://snomed.info/sct#372665008. Valid display is 'Mittesteroidne põletikuvastane aine' (et) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.code: None of the codings provided are in the value set 'Allergia allergeenid' (https://fhir.ee/ValueSet/allergia-allergeenid|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#372665008)
+ERROR: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'Patient/$ee-mpi-patient'
+ERROR: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Oral route' for http://snomed.info/sct#26643006. Valid display is 'Suukaudne manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyPatientReportedDrug: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#26643006)
+== fsh-generated/resources/AllergyIntolerance-AllergyPatientReportedFood.json ==
+WARNING: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.category[0]: ValueSet 'https://fhir.ee/ValueSet/allergia-kategooria' not found
+ERROR: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.code.coding[0].display: Wrong Display Name 'Peanut' for http://snomed.info/sct#762952008. Valid display is 'Maapähkel' (et) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.code: None of the codings provided are in the value set 'Allergia allergeenid' (https://fhir.ee/ValueSet/allergia-allergeenid|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#762952008)
+ERROR: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'Patient/$ee-mpi-patient'
+ERROR: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.reaction[0].exposureRoute.coding[0].display: Wrong Display Name 'Intravenous route' for http://snomed.info/sct#47625008. Valid display is 'Intravenoosne manustamisviis' (et-x-sctlang-71000181-105) (for the language(s) 'et')
+ERROR: AllergyIntolerance/AllergyPatientReportedFood: AllergyIntolerance.reaction[0].exposureRoute: None of the codings provided are in the value set 'Allergia kokkupuude-manustamisviis' (https://fhir.ee/ValueSet/allergia-kokkupuude-manustamisviis|1.0.0), and a coding from this value set is required) (codes = http://snomed.info/sct#47625008)
+== fsh-generated/resources/AllergyIntolerance-noAllergy.json ==
+WARNING: AllergyIntolerance/noAllergy: AllergyIntolerance.clinicalStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus' not found
+WARNING: AllergyIntolerance/noAllergy: AllergyIntolerance.verificationStatus: ValueSet 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus' not found
+WARNING: AllergyIntolerance/noAllergy: AllergyIntolerance.code: Required supplement not found: https://fhir.ee/CodeSystem/allergia-allergeenid|1.0.0
+ERROR: AllergyIntolerance/noAllergy: AllergyIntolerance.code: None of the codings provided are in the value set 'Allergia allergeenid' (https://fhir.ee/ValueSet/allergia-allergeenid|1.0.0), and a coding from this value set is required) (codes = null#716186003)
+ERROR: AllergyIntolerance/noAllergy: AllergyIntolerance.participant[0].actor: Unable to resolve resource with reference 'PractitionerRole/$ee-pract-role'
+== fsh-generated/resources/Condition-AllergyCondition1.json ==
+WARNING: Condition/AllergyCondition1: Condition.code: ValueSet 'https://fhir.ee/ValueSet/rhk-10' not found
+WARNING: Condition/AllergyCondition1: Condition.code: Unable to check whether the code is in the value set '' because the code system https://fhir.ee/CodeSystem/rhk-10 was not found
+WARNING: Condition/AllergyCondition1: Condition.code.coding[0].system: A definition for CodeSystem 'https://fhir.ee/CodeSystem/rhk-10' could not be found, so the code cannot be validated
+== fsh-generated/resources/ImplementationGuide-ig-ee-allergy.json ==
+WARNING: ImplementationGuide/ig-ee-allergy: ImplementationGuide.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: ImplementationGuide/ig-ee-allergy: ImplementationGuide.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[18].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[19].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/ig-ee-allergy: ImplementationGuide.definition.parameter[25].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: Resource: The resource ImplementationGuide/ig-ee-allergy could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Patient-patientExampleMPI.json ==
+WARNING: Patient/patientExampleMPI: Patient.identifier[0].system: No definition could be found for URL value 'https://fhir.ee/sid/pid/est/ni'
+WARNING: Patient/patientExampleMPI: Patient.identifier[1].system: No definition could be found for URL value 'https://fhir.ee/sid/pid/est/ppn'
+WARNING: Patient/patientExampleMPI: Patient.gender: Required supplement not found: https://fhir.ee/CodeSystem/administratiivne-sugu|2.0.0
+ERROR: Patient/patientExampleMPI: Patient.gender: The value provided ('female') was not found in the value set 'Administratiivne sugu' (https://fhir.ee/ValueSet/administratiivne-sugu|2.0.0), and a code is required from this value set  (error message = Required supplement not found: https://fhir.ee/CodeSystem/administratiivne-sugu|2.0.0)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-condition.json ==
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.snapshot.element[18].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/rhk-10'
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/rhk-10'
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.differential.element[2].binding: The valueSet reference https://fhir.ee/ValueSet/rhk-10 on element Condition.code could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.snapshot.element[18].binding: The valueSet reference https://fhir.ee/ValueSet/rhk-10 on element Condition.code could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-condition: StructureDefinition.snapshot.element[29].binding: The definition for the element 'Condition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-condition could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-diagnosis.json ==
+WARNING: StructureDefinition/ee-tis-allergy-diagnosis: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-diagnosis: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-diagnosis could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance.json ==
+WARNING: EE TIS AllergyIntolerance.AllergyIntolerance.clinicalStatus: Binding https://fhir.ee/ValueSet/allergia-kliiniline-staatus could not be located
+WARNING: EE TIS AllergyIntolerance.AllergyIntolerance.verificationStatus: Binding https://fhir.ee/ValueSet/allergia-kinnitusstaatus could not be located
+WARNING: EE TIS AllergyIntolerance.AllergyIntolerance.category: Binding https://fhir.ee/ValueSet/allergia-kategooria could not be located
+WARNING: EE TIS AllergyIntolerance.AllergyIntolerance.criticality: Binding https://fhir.ee/ValueSet/allergia-kriitilisus could not be located
+WARNING: EE TIS AllergyIntolerance.AllergyIntolerance.reaction.severity: Binding https://fhir.ee/ValueSet/reaktsiooni-raskusaste could not be located
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[10].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[11].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[12].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[13].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kategooria'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[14].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kriitilisus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[44].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[53].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/toimeained'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[57].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[6].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kategooria'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[7].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kriitilisus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[30].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[39].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/toimeained'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[43].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[3].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[4].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kinnitusstaatus on element AllergyIntolerance.verificationStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[5].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp on element AllergyIntolerance.type could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[6].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kategooria on element AllergyIntolerance.category could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[7].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kriitilisus on element AllergyIntolerance.criticality could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[39].binding: The valueSet reference https://fhir.ee/ValueSet/toimeained on element AllergyIntolerance.reaction.substance could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.differential.element[43].binding: The valueSet reference https://fhir.ee/ValueSet/reaktsiooni-raskusaste on element AllergyIntolerance.reaction.severity could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[10].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kinnitusstaatus on element AllergyIntolerance.verificationStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[12].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp on element AllergyIntolerance.type could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[13].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kategooria on element AllergyIntolerance.category could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[14].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kriitilisus on element AllergyIntolerance.criticality could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[44].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[53].binding: The valueSet reference https://fhir.ee/ValueSet/toimeained on element AllergyIntolerance.reaction.substance could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance: StructureDefinition.snapshot.element[57].binding: The valueSet reference https://fhir.ee/ValueSet/reaktsiooni-raskusaste on element AllergyIntolerance.reaction.severity could not be resolved
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-intolerance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance-medication.json ==
+WARNING: EE TIS AllergyIntolerance Medication.AllergyIntolerance.clinicalStatus: Binding https://fhir.ee/ValueSet/allergia-kliiniline-staatus could not be located
+WARNING: EE TIS AllergyIntolerance Medication.AllergyIntolerance.verificationStatus: Binding https://fhir.ee/ValueSet/allergia-kinnitusstaatus could not be located
+WARNING: EE TIS AllergyIntolerance Medication.AllergyIntolerance.category: Binding https://fhir.ee/ValueSet/allergia-kategooria could not be located
+WARNING: EE TIS AllergyIntolerance Medication.AllergyIntolerance.criticality: Binding https://fhir.ee/ValueSet/allergia-kriitilisus could not be located
+WARNING: EE TIS AllergyIntolerance Medication.AllergyIntolerance.reaction.severity: Binding https://fhir.ee/ValueSet/reaktsiooni-raskusaste could not be located
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[10].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[11].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[12].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[13].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kategooria'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[14].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kriitilisus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[15].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/atc-ee'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[44].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[54].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/toimeained'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[58].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[5].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[6].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kategooria'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[7].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kriitilisus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[8].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/atc-ee'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[30].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[40].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/toimeained'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[44].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/reaktsiooni-raskusaste'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[3].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[4].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kinnitusstaatus on element AllergyIntolerance.verificationStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[5].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp on element AllergyIntolerance.type could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[6].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kategooria on element AllergyIntolerance.category could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[7].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kriitilisus on element AllergyIntolerance.criticality could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[8].binding: The valueSet reference https://fhir.ee/ValueSet/atc-ee on element AllergyIntolerance.code could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[40].binding: The valueSet reference https://fhir.ee/ValueSet/toimeained on element AllergyIntolerance.reaction.substance could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.differential.element[44].binding: The valueSet reference https://fhir.ee/ValueSet/reaktsiooni-raskusaste on element AllergyIntolerance.reaction.severity could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[10].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kinnitusstaatus on element AllergyIntolerance.verificationStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[12].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-voi-talumatuse-tyyp on element AllergyIntolerance.type could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[13].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kategooria on element AllergyIntolerance.category could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[14].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kriitilisus on element AllergyIntolerance.criticality could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[15].binding: The valueSet reference https://fhir.ee/ValueSet/atc-ee on element AllergyIntolerance.code could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[44].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://fhir.ee/ValueSet/toimeained on element AllergyIntolerance.reaction.substance could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-medication: StructureDefinition.snapshot.element[58].binding: The valueSet reference https://fhir.ee/ValueSet/reaktsiooni-raskusaste on element AllergyIntolerance.reaction.severity could not be resolved
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-intolerance-medication could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance-no-allergy.json ==
+WARNING: EE TIS AllergyIntoleranceNoAllergy.AllergyIntolerance.clinicalStatus: Binding https://fhir.ee/ValueSet/allergia-kliiniline-staatus could not be located
+WARNING: EE TIS AllergyIntoleranceNoAllergy.AllergyIntolerance.verificationStatus: Binding https://fhir.ee/ValueSet/allergia-kinnitusstaatus could not be located
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[10].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[11].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[15].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[37].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.differential.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kinnitusstaatus'
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.differential.element[25].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.differential.element[3].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.differential.element[4].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kinnitusstaatus on element AllergyIntolerance.verificationStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[10].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[11].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kinnitusstaatus on element AllergyIntolerance.verificationStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-intolerance-no-allergy: StructureDefinition.snapshot.element[37].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-intolerance-no-allergy could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-patient-reported.json ==
+WARNING: EE TIS AllergyIntolerance Patient Reported.AllergyIntolerance.clinicalStatus: Binding https://fhir.ee/ValueSet/allergia-kliiniline-staatus could not be located
+WARNING: EE TIS AllergyIntolerance Patient Reported.AllergyIntolerance.category: Binding https://fhir.ee/ValueSet/allergia-kategooria could not be located
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[10].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[13].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kategooria'
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[44].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.differential.element[3].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kliiniline-staatus'
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.differential.element[6].binding.valueSet: A definition could not be found for Canonical URL 'https://fhir.ee/ValueSet/allergia-kategooria'
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.differential.element[30].pattern.ofType(CodeableConcept).coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.differential.element[3].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.differential.element[6].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kategooria on element AllergyIntolerance.category could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[10].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kliiniline-staatus on element AllergyIntolerance.clinicalStatus could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[13].binding: The valueSet reference https://fhir.ee/ValueSet/allergia-kategooria on element AllergyIntolerance.category could not be resolved
+WARNING: StructureDefinition/ee-tis-allergy-patient-reported: StructureDefinition.snapshot.element[44].binding: The definition for the element 'AllergyIntolerance.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/participation-role-type|5.0.0' which is experimental, but this structure is not labeled as experimental
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-patient-reported could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-ee-tis-allergy-reaction-grouper.json ==
+WARNING: StructureDefinition/ee-tis-allergy-reaction-grouper: StructureDefinition.jurisdiction[0]: Unable to check whether the code is in the value set 'http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0' because the code system urn:iso:std:iso:3166 was not found
+WARNING: StructureDefinition/ee-tis-allergy-reaction-grouper: StructureDefinition.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166' could not be found, so the code cannot be validated
+INFORMATION: Resource: The resource StructureDefinition/ee-tis-allergy-reaction-grouper could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

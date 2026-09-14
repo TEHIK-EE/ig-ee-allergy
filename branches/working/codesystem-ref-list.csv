@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/allergy-intolerance-criticality,5.0.0,active,"2.16.840.1.113883.4.642.1.120,2.16.840.1.113883.4.642.4.130,2.16.840.1.113883.4.642.2.51",AllergyIntoleranceCriticality,Allergy Intolerance Criticality,"Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.","ValueSet/allergy-intolerance-criticality"
