@@ -1,0 +1,53 @@
+"Id","w5","sct-concept","v2","rim","sct-attr"
+"","","","","",""
+"Condition","clinical.general","< 243796009 |Situation with explicit context| : 246090004 |Associated finding| = ( ( < 404684003 |Clinical finding| MINUS ( << 420134006 |Propensity to adverse reactions| OR << 473010000 |Hypersensitivity condition| OR << 79899007 |Drug interaction| OR << 69449002 |Drug action| OR << 441742003 |Evaluation finding| OR << 307824009 |Administrative status| OR << 385356007 |Tumor stage finding|)) OR < 272379006 |Event|)","PPR message","Entity, Role, or Act,Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value<Diagnosis]",""
+"Condition.id","","","","",""
+"Condition.meta","","","","",""
+"Condition.implicitRules","","","","",""
+"Condition.language","","","","",""
+"Condition.text","","","","Act.text?",""
+"Condition.contained","","","","N/A",""
+"Condition.extension","","","","N/A",""
+"Condition.modifierExtension","","","","N/A",""
+"Condition.identifier","FiveWs.identifier","","",".id",""
+"Condition.clinicalStatus","FiveWs.status","< 303105007 |Disease phases|","PRB-14","Observation ACT
+.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""clinicalStatus"", moodCode=EVN].value",""
+"Condition.clinicalStatus.id","","","","n/a",""
+"Condition.clinicalStatus.extension","","","","n/a",""
+"Condition.clinicalStatus.coding","","","C*E.1-8, C*E.10-22","union(., ./translation)",""
+"Condition.clinicalStatus.text","","","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data",""
+"Condition.verificationStatus","FiveWs.status","< 410514004 |Finding context value|","PRB-13","Observation ACT
+.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""verificationStatus"", moodCode=EVN].value","408729009"
+"Condition.category","FiveWs.class","< 404684003 |Clinical finding|","'problem' if from PRB-3. 'diagnosis' if from DG1 segment in PV1 message",".code",""
+"Condition.severity","FiveWs.grade","< 272141005 |Severities|","PRB-26 / ABS-3","Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""severity""].value","246112005"
+"Condition.code","FiveWs.what[x]","(< 404684003 |Clinical finding| MINUS (
+<< 420134006 |Propensity to adverse reactions| OR 
+<< 473010000 |Hypersensitivity condition| OR 
+<< 79899007 |Drug interaction| OR
+<< 69449002 |Drug action| OR 
+<< 441742003 |Evaluation finding| OR 
+<< 307824009 |Administrative status| OR 
+<< 385356007 |Tumor stage finding|)) 
+OR < 413350009 |Finding with explicit context|
+OR < 272379006 |Event|","PRB-3",".value","246090004"
+"Condition.bodySite","","< 442083009  |Anatomical or acquired body structure|","",".targetBodySiteCode","363698007"
+"Condition.subject","FiveWs.subject[x]","","PID-3",".participation[typeCode=SBJ].role[classCode=PAT]",""
+"Condition.encounter","FiveWs.context","","PV1-19 (+PV1-54)",".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]",""
+"Condition.onset[x]","FiveWs.init","","PRB-16",".effectiveTime.low or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""age at onset""].value",""
+"Condition.abatement[x]","FiveWs.done[x]","","",".effectiveTime.high or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""age at remission""].value or .inboundRelationship[typeCode=SUBJ]source[classCode=CONC, moodCode=EVN].status=completed",""
+"Condition.recordedDate","FiveWs.recorded","","REL-11",".participation[typeCode=AUT].time",""
+"Condition.participant","","","",".participation[typeCode=PRF]",""
+"Condition.participant.id","","","","n/a",""
+"Condition.participant.extension","","","","n/a",""
+"Condition.participant.modifierExtension","","","","N/A",""
+"Condition.participant.function","","","",".participation.functionCode",""
+"Condition.participant.actor","FiveWs.who","","",".player",""
+"Condition.stage","","","","./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""stage/grade""]",""
+"Condition.stage.id","","","","n/a",""
+"Condition.stage.extension","","","","n/a",""
+"Condition.stage.modifierExtension","","","","N/A",""
+"Condition.stage.summary","","< 254291000 |Staging and scales|","PRB-14",".value",""
+"Condition.stage.assessment","","","",".self",""
+"Condition.stage.type","","","","./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""stage type""]",""
+"Condition.evidence","","","",".outboundRelationship[typeCode=SPRT].target[classCode=OBS, moodCode=EVN]",""
+"Condition.note","","","NTE child of PRB",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value",""

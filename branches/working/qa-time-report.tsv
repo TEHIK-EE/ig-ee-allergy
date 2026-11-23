@@ -1,0 +1,21 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-ig-ee-allergy.json	4925	-	0	0	0	0	0	0	8	110	0	0	0	0	0	0	0	1	0	0	52	59	0	0	0	1	0	0
+fsh-generated/resources/AllergyIntolerance-example.json	558	79	0	0	1	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	18	22	0	0	0	0	0	0
+fsh-generated/resources/Patient-example.json	192	53	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	14	15	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ee-tis-allergy-intolerance.json	3332	9	0	92	0	0	1	0	0	1593	0	0	0	0	0	0	0	1	0	0	180	1395	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-ee-tis-allergy-probability.json	1546	7	0	37	0	0	0	0	0	58	0	0	0	0	0	0	0	0	0	0	49	221	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ee-tis-model-allergyintolerance.json	12407	16	0	70	0	0	0	0	0	99	0	0	0	0	0	0	0	0	0	0	154	272	0	0	0	6	0	0
+/fsh-generated/includes/fsh-link-references.md	330	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	1738	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/search.xml	446	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	31	0	0	0	0	0	0
+/input/pagecontent/downloads.xml	1148	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	0	0	0	0	0	0
+/input/pagecontent/page2.md	128	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/intolerance.md	107	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/contacts.md	373	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	2039	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/sample.png	2028720	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0	0	0	0	0	0
+/input/images/robots.txt	24	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	4292	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0

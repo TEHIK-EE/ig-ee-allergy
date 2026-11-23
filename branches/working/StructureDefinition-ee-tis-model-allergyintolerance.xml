@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ee-tis-model-allergyintolerance"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ee-tis-model-allergyintolerance</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance" title="Allergy / Intolerance logical model">ee-tis-model-allergyintolerance</a><a name="ee-tis-model-allergyintolerance"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergy Intolerance Logical Model</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.patsient" title="Viide patsiendile, kelle kohta allergia/talumatuse info käib.">patsient</a><a name="ee-tis-model-allergyintolerance.patsient"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Viide patsiendile, kelle kohta allergia/talumatuse info käib.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.asutus" title="Tervishoiuteenuse osutaja (TTO), kus teave salvestati.">asutus</a><a name="ee-tis-model-allergyintolerance.asutus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tervishoiuteenuse osutaja (TTO), kus teave salvestati.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.tervishoiutootaja" title="Tervishoiuteenuse osutaja (TTO), kes teabe salvestas.">tervishoiutootaja</a><a name="ee-tis-model-allergyintolerance.tervishoiutootaja"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/references.html">Reference</a>()</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tervishoiuteenuse osutaja (TTO), kes teabe salvestas.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.kliinilineStaatus" title="Allergia või talumatuse praegune kliiniline seisund.">kliinilineStaatus</a><a name="ee-tis-model-allergyintolerance.kliinilineStaatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergia või talumatuse praegune kliiniline seisund.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.diagnoosiStaatus" title="Allergia või talumatuse diagnoosi kinnitatuse tase (nt kinnitatud, kinnitamata).">diagnoosiStaatus</a><a name="ee-tis-model-allergyintolerance.diagnoosiStaatus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergia või talumatuse diagnoosi kinnitatuse tase (nt kinnitatud, kinnitamata).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.kriitilisus" title="Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid.">kriitilisus</a><a name="ee-tis-model-allergyintolerance.kriitilisus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.toenaosus" title="Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele.">toenaosus</a><a name="ee-tis-model-allergyintolerance.toenaosus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.allergeeniKood" title="Allergeenile vastav standardiseeritud kood (siia tuleb loend). Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik.">allergeeniKood</a><a name="ee-tis-model-allergyintolerance.allergeeniKood"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergeenile vastav standardiseeritud kood (siia tuleb loend). Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.allergeeniKirjeldus" title="Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.">allergeeniKirjeldus</a><a name="ee-tis-model-allergyintolerance.allergeeniKirjeldus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria" title="Allergeeni üldine kategooria (nt ravim, toit, putukamürk, olme).">allergeeniKategooria</a><a name="ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergeeni üldine kategooria (nt ravim, toit, putukamürk, olme).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.Alguskuupaev" title="Kuupäev, millal reaktsioon esmakordselt täheldati.">Alguskuupaev</a><a name="ee-tis-model-allergyintolerance.Alguskuupaev"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kuupäev, millal reaktsioon esmakordselt täheldati.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.Lopukuupaev" title="Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks.">Lopukuupaev</a><a name="ee-tis-model-allergyintolerance.Lopukuupaev"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.Avastamisaeg" title="Allergia avastamise aeg (võib erineda esmasest avaldumisest).">Avastamisaeg</a><a name="ee-tis-model-allergyintolerance.Avastamisaeg"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergia avastamise aeg (võib erineda esmasest avaldumisest).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.Manustamisaeg" title="Aine (nt ravimi) manustamise aeg, kui see on reaktsiooni hindamisel oluline.">Manustamisaeg</a><a name="ee-tis-model-allergyintolerance.Manustamisaeg"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Aine (nt ravimi) manustamise aeg, kui see on reaktsiooni hindamisel oluline.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.ReaktsiooniTyyp" title="Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega).">ReaktsiooniTyyp</a><a name="ee-tis-model-allergyintolerance.ReaktsiooniTyyp"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine" title="Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile.">ReaktsiooniAvaldumine</a><a name="ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste" title=" Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske).">ReaktsiooniTosidusRaskusaste</a><a name="ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"> Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis" title="Kuidas toimus kokkupuude ainega.">KokkupuuteKirjeldusManustamisviis</a><a name="ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kuidas toimus kokkupuude ainega.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.ReaktsiooniKordumine" title="Kas reaktsioon kordus hilisemal kokkupuutel?">ReaktsiooniKordumine</a><a name="ee-tis-model-allergyintolerance.ReaktsiooniKordumine"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Kas reaktsioon kordus hilisemal kokkupuutel?<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding">: </span><span title="null" class="binding">http://hl7.org/fhir/ValueSet/allergyintolerance-clinical</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus" title="Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu).">AllergiaTalumatuseKirjeldus</a><a name="ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu).<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ee-tis-model-allergyintolerance-definitions.html#ee-tis-model-allergyintolerance.Lisainfo" title="Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada.">Lisainfo</a><a name="ee-tis-model-allergyintolerance.Lisainfo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada.<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/allergy/StructureDefinition/ee-tis-model-allergyintolerance"/>
+  <version value="0.1.0"/>
+  <name value="EETISModelAllergyIntolerance"/>
+  <title value="Allergy Intolerance Logical Model"/>
+  <status value="draft"/>
+  <date value="2025-11-18T11:26:15+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.tehik.ee"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@tehik.ee"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="TEHIK Andmekorraldus"/>
+    <telecom>
+      <system value="email"/>
+      <value value="andmekorraldus@tehik.ee"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Allergy / Intolerance logical model"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://fhir.ee/allergy/StructureDefinition/ee-tis-model-allergyintolerance"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <element id="ee-tis-model-allergyintolerance">
+      <path value="ee-tis-model-allergyintolerance"/>
+      <short value="Allergy Intolerance Logical Model"/>
+      <definition value="Allergy / Intolerance logical model"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.patsient">
+      <path value="ee-tis-model-allergyintolerance.patsient"/>
+      <short value="Viide patsiendile, kelle kohta allergia/talumatuse info käib."/>
+      <definition value="Viide patsiendile, kelle kohta allergia/talumatuse info käib."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.patsient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.asutus">
+      <path value="ee-tis-model-allergyintolerance.asutus"/>
+      <short value="Tervishoiuteenuse osutaja (TTO), kus teave salvestati."/>
+      <definition value="Tervishoiuteenuse osutaja (TTO), kus teave salvestati."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.asutus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.tervishoiutootaja">
+      <path value="ee-tis-model-allergyintolerance.tervishoiutootaja"/>
+      <short value="Tervishoiuteenuse osutaja (TTO), kes teabe salvestas."/>
+      <definition value="Tervishoiuteenuse osutaja (TTO), kes teabe salvestas."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.tervishoiutootaja"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.kliinilineStaatus">
+      <path value="ee-tis-model-allergyintolerance.kliinilineStaatus"/>
+      <short value="Allergia või talumatuse praegune kliiniline seisund."/>
+      <definition value="Allergia või talumatuse praegune kliiniline seisund."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.kliinilineStaatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.diagnoosiStaatus">
+      <path value="ee-tis-model-allergyintolerance.diagnoosiStaatus"/>
+      <short value="Allergia või talumatuse diagnoosi kinnitatuse tase (nt kinnitatud, kinnitamata)."/>
+      <definition value="Allergia või talumatuse diagnoosi kinnitatuse tase (nt kinnitatud, kinnitamata)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.diagnoosiStaatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.kriitilisus">
+      <path value="ee-tis-model-allergyintolerance.kriitilisus"/>
+      <short value="Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."/>
+      <definition value="Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.kriitilisus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.toenaosus">
+      <path value="ee-tis-model-allergyintolerance.toenaosus"/>
+      <short value="Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele."/>
+      <definition value="Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.toenaosus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKood">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKood"/>
+      <short value="Allergeenile vastav standardiseeritud kood (siia tuleb loend). Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."/>
+      <definition value="Allergeenile vastav standardiseeritud kood (siia tuleb loend). Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.allergeeniKood"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus"/>
+      <short value="Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."/>
+      <definition value="Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus.id">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus.extension">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus.extension"/>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus.value">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus.value"/>
+      <representation value="xmlAttr"/>
+      <short value="Primitive value for string"/>
+      <definition value="The actual value"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="string.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/regex">
+          <valueString value="^[\s\S]+$"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <maxLength value="1048576"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria"/>
+      <short value="Allergeeni üldine kategooria (nt ravim, toit, putukamürk, olme)."/>
+      <definition value="Allergeeni üldine kategooria (nt ravim, toit, putukamürk, olme)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Alguskuupaev">
+      <path value="ee-tis-model-allergyintolerance.Alguskuupaev"/>
+      <short value="Kuupäev, millal reaktsioon esmakordselt täheldati."/>
+      <definition value="Kuupäev, millal reaktsioon esmakordselt täheldati."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.Alguskuupaev"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Lopukuupaev">
+      <path value="ee-tis-model-allergyintolerance.Lopukuupaev"/>
+      <short value="Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."/>
+      <definition value="Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.Lopukuupaev"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Avastamisaeg">
+      <path value="ee-tis-model-allergyintolerance.Avastamisaeg"/>
+      <short value="Allergia avastamise aeg (võib erineda esmasest avaldumisest)."/>
+      <definition value="Allergia avastamise aeg (võib erineda esmasest avaldumisest)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.Avastamisaeg"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Manustamisaeg">
+      <path value="ee-tis-model-allergyintolerance.Manustamisaeg"/>
+      <short value="Aine (nt ravimi) manustamise aeg, kui see on reaktsiooni hindamisel oluline."/>
+      <definition value="Aine (nt ravimi) manustamise aeg, kui see on reaktsiooni hindamisel oluline."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.Manustamisaeg"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniTyyp">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniTyyp"/>
+      <short value="Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega)."/>
+      <definition value="Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.ReaktsiooniTyyp"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine"/>
+      <short value="Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile."/>
+      <definition value="Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste"/>
+      <short value=" Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske)."/>
+      <definition value=" Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis">
+      <path value="ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis"/>
+      <short value="Kuidas toimus kokkupuude ainega."/>
+      <definition value="Kuidas toimus kokkupuude ainega."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniKordumine">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniKordumine"/>
+      <short value="Kas reaktsioon kordus hilisemal kokkupuutel?"/>
+      <definition value="Kas reaktsioon kordus hilisemal kokkupuutel?"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.ReaktsiooniKordumine"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus">
+      <path value="ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus"/>
+      <short value="Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."/>
+      <definition value="Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Lisainfo">
+      <path value="ee-tis-model-allergyintolerance.Lisainfo"/>
+      <short value="Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."/>
+      <definition value="Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ee-tis-model-allergyintolerance.Lisainfo"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ee-tis-model-allergyintolerance">
+      <path value="ee-tis-model-allergyintolerance"/>
+      <short value="Allergy Intolerance Logical Model"/>
+      <definition value="Allergy / Intolerance logical model"/>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.patsient">
+      <path value="ee-tis-model-allergyintolerance.patsient"/>
+      <short value="Viide patsiendile, kelle kohta allergia/talumatuse info käib."/>
+      <definition value="Viide patsiendile, kelle kohta allergia/talumatuse info käib."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.asutus">
+      <path value="ee-tis-model-allergyintolerance.asutus"/>
+      <short value="Tervishoiuteenuse osutaja (TTO), kus teave salvestati."/>
+      <definition value="Tervishoiuteenuse osutaja (TTO), kus teave salvestati."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.tervishoiutootaja">
+      <path value="ee-tis-model-allergyintolerance.tervishoiutootaja"/>
+      <short value="Tervishoiuteenuse osutaja (TTO), kes teabe salvestas."/>
+      <definition value="Tervishoiuteenuse osutaja (TTO), kes teabe salvestas."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.kliinilineStaatus">
+      <path value="ee-tis-model-allergyintolerance.kliinilineStaatus"/>
+      <short value="Allergia või talumatuse praegune kliiniline seisund."/>
+      <definition value="Allergia või talumatuse praegune kliiniline seisund."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.diagnoosiStaatus">
+      <path value="ee-tis-model-allergyintolerance.diagnoosiStaatus"/>
+      <short value="Allergia või talumatuse diagnoosi kinnitatuse tase (nt kinnitatud, kinnitamata)."/>
+      <definition value="Allergia või talumatuse diagnoosi kinnitatuse tase (nt kinnitatud, kinnitamata)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.kriitilisus">
+      <path value="ee-tis-model-allergyintolerance.kriitilisus"/>
+      <short value="Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."/>
+      <definition value="Potentsiaalne risk tulevaste eluohutavate kõrvaltoimete tekkeks, kui inimene puutub kokku ainega, mis on teadaolevalt põhjustanud kõrvaltoimeid."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.toenaosus">
+      <path value="ee-tis-model-allergyintolerance.toenaosus"/>
+      <short value="Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele."/>
+      <definition value="Kinnitus tõenäosusele, mis on seotud kalduvuse või potentsiaalse riskiga reaktsiooni suhtes tuvastatud ainele."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKood">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKood"/>
+      <short value="Allergeenile vastav standardiseeritud kood (siia tuleb loend). Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."/>
+      <definition value="Allergeenile vastav standardiseeritud kood (siia tuleb loend). Kui allergeeni kood ei ole saadaval, peab allergeeni kirjeldus olema võimalikult täielik."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus"/>
+      <short value="Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."/>
+      <definition value="Aine kirjeldus, mis võib vallandada reaktsiooni. Kohustuslik ja võib korduda, kui kood pole piisav või on mitu kirjeldust."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria">
+      <path value="ee-tis-model-allergyintolerance.allergeeniKirjeldus.allergeeniKategooria"/>
+      <short value="Allergeeni üldine kategooria (nt ravim, toit, putukamürk, olme)."/>
+      <definition value="Allergeeni üldine kategooria (nt ravim, toit, putukamürk, olme)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Alguskuupaev">
+      <path value="ee-tis-model-allergyintolerance.Alguskuupaev"/>
+      <short value="Kuupäev, millal reaktsioon esmakordselt täheldati."/>
+      <definition value="Kuupäev, millal reaktsioon esmakordselt täheldati."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Lopukuupaev">
+      <path value="ee-tis-model-allergyintolerance.Lopukuupaev"/>
+      <short value="Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."/>
+      <definition value="Kuupäev, millal allergia/talumatus loeti lahenenuks või mitteaktiivseks."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Avastamisaeg">
+      <path value="ee-tis-model-allergyintolerance.Avastamisaeg"/>
+      <short value="Allergia avastamise aeg (võib erineda esmasest avaldumisest)."/>
+      <definition value="Allergia avastamise aeg (võib erineda esmasest avaldumisest)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Manustamisaeg">
+      <path value="ee-tis-model-allergyintolerance.Manustamisaeg"/>
+      <short value="Aine (nt ravimi) manustamise aeg, kui see on reaktsiooni hindamisel oluline."/>
+      <definition value="Aine (nt ravimi) manustamise aeg, kui see on reaktsiooni hindamisel oluline."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniTyyp">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniTyyp"/>
+      <short value="Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega)."/>
+      <definition value="Kirjeldab, kas seisund on allergia, mitteallergiline talumatus või teadmata tüüpi (nt kui pole teada, kas tegemist on allergiaga või talumatusega)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniAvaldumine"/>
+      <short value="Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile."/>
+      <definition value="Allergilise reaktsiooni kliinilise avaldumise kirjeldus (nt anafülaksia, angioödeem, nõgestõbi). Allergia avaldumine VÕI Reaktsioon allergeenile."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniTosidusRaskusaste"/>
+      <short value=" Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske)."/>
+      <definition value=" Täheldatud reaktsiooni kliiniline tõsidus (nt kerge, mõõdukas, raske)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis">
+      <path value="ee-tis-model-allergyintolerance.KokkupuuteKirjeldusManustamisviis"/>
+      <short value="Kuidas toimus kokkupuude ainega."/>
+      <definition value="Kuidas toimus kokkupuude ainega."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.ReaktsiooniKordumine">
+      <path value="ee-tis-model-allergyintolerance.ReaktsiooniKordumine"/>
+      <short value="Kas reaktsioon kordus hilisemal kokkupuutel?"/>
+      <definition value="Kas reaktsioon kordus hilisemal kokkupuutel?"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <description value="http://hl7.org/fhir/ValueSet/allergyintolerance-clinical"/>
+      </binding>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus">
+      <path value="ee-tis-model-allergyintolerance.AllergiaTalumatuseKirjeldus"/>
+      <short value="Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."/>
+      <definition value="Täiendav tekstiline kirjeldus allergiast, talumatusest või meditsiinilisest hoiatusest (nt aspiriini talumatus seedetrakti verejooksu tõttu)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ee-tis-model-allergyintolerance.Lisainfo">
+      <path value="ee-tis-model-allergyintolerance.Lisainfo"/>
+      <short value="Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."/>
+      <definition value="Muu asjakohane teave, mida ei saanud mujal struktureeritult esitada."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
